@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --surface: #0f131e;
+    --surface-lowest: #0a0e18;
+    --surface-low: #181b26;
+    --surface-container: #1c1f2a;
+    --surface-high: #262a35;
+    --surface-highest: #313440;
+    --primary: #c4eeff;
+    --primary-container: #65d9ff;
+    --secondary: #b2c5ff;
+    --tertiary: #ffe3bf;
+    --tertiary-container: #f8c270;
+    --error: #ffb4ab;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #050812;
+    color: #dfe2f1;
+  }
+
+  html[dir="rtl"] body {
+    font-family: 'Vazirmatn', 'Sora', sans-serif;
+  }
+
+  html[dir="ltr"] body {
+    font-family: 'Sora', 'Vazirmatn', sans-serif;
+  }
+}
+
+.font-display {
+  font-family: 'Vazirmatn', 'Space Grotesk', sans-serif;
+}
+
+.font-mono-tech {
+  font-family: 'Space Mono', 'Vazirmatn', monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.ltr-num {
+  direction: ltr;
+  display: inline-block;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom sleek scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e18;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262a35;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #65d9ff;
+}

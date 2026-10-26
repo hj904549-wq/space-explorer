@@ -1,0 +1,616 @@
+# SPACE EXPLORER — COMPLETE REPAIR AND SCIENTIFIC UPGRADE
+## Camera Restoration, Synchronized Information Cards, Selectable Moons, Realistic Planetary Rendering, and 3D Interior Exploration
+
+You are continuing development of an existing Space Explorer 3D Solar System Observatory built with React, TypeScript, Vite, and Three.js or its existing React Three Fiber integration.
+
+The project already has an established visual design, a scroll-driven solar-system journey, planet information cards, orbital paths, and moon-related features. Some of these features have regressed after recent changes.
+
+Your mission is to repair the current implementation and upgrade it into a polished, scientifically credible, interactive 3D educational experience suitable for a school science presentation.
+
+**This is a targeted repair of the existing application, not permission to redesign everything or replace the 3D scene with a new template.**
+
+Preserve the existing visual identity, Persian RTL interface, English LTR option where supported, working sections, and previously successful camera composition.
+
+Do not sacrifice working behavior to add new features.
+
+---
+
+# PHASE 0 — INSPECT THE EXISTING PROJECT BEFORE EDITING
+
+Before changing any code:
+
+1. Inspect the complete project structure and identify the actual application entry point.
+2. Inspect the current 3D scene, camera, planet meshes, moon meshes, orbit paths, materials, textures, and lighting.
+3. Inspect the existing scroll animation and camera-control implementation.
+4. Inspect the current information-card visibility logic and active-section detection.
+5. Inspect moon selection, object picking, raycasting, selected-object state, and information panels.
+6. Inspect responsive styles and the mobile/tablet navigation.
+7. Inspect planetary data, moon data, and all scientific information sources.
+8. Inspect the dependency configuration and the current package-lock file.
+9. Identify which features are working, which features regressed, and which requested features are missing.
+
+If version history, earlier project versions, or previous implementation files are available, compare them with the current implementation to recover the camera composition and interactions that previously worked well.
+
+Do not claim to have recovered an earlier implementation if it is not available.
+
+Before making changes, create a concise internal implementation plan based on the actual source code.
+
+Do not ask me to recreate or describe components that you can inspect directly in the project.
+
+---
+
+# PHASE 1 — RESTORE THE CAMERA AND SCROLL EXPERIENCE
+
+This is the highest-priority repair.
+
+The previous version had a better camera angle, a clearer view of each planet, and information cards that appeared at the appropriate time. The current version has degraded these behaviors.
+
+## 1.1 Camera composition
+
+Restore a deliberate, cinematic viewing angle for every featured planet.
+
+Requirements:
+
+- The planet should be the visual subject of its section.
+- The camera must frame the planet at an appropriate distance and angle.
+- The planet must not be clipped by the viewport.
+- The planet must not disappear behind an information card.
+- The camera should not point at empty space while the card displays information about an object that is not visible.
+- Preserve the smoothness and composition of the earlier camera journey where the original implementation can be recovered.
+- Do not apply one arbitrary camera angle to every planet.
+- Allow different framing for the Sun, rocky planets, gas giants, rings, and moon exploration.
+- Recalculate camera targets and framing when the viewport changes.
+
+## 1.2 Synchronize scroll progress, camera movement, and information cards
+
+The camera and information cards must be coordinated by the same active-section or transition state.
+
+When a section becomes active:
+
+1. Begin the camera transition toward the featured object.
+2. Reveal that object's information card at the beginning of the relevant transition, when the object is becoming visible.
+3. Ensure the card and camera correspond to the same object.
+4. Finish the transition with the object framed clearly and the card fully readable.
+
+Do not wait until the entire section has finished scrolling before showing the card.
+
+Do not display the previous planet's information while the camera is already focusing on the next planet.
+
+Avoid flickering, delayed cards, duplicate transitions, abrupt camera jumps, and conflicting scroll triggers.
+
+Handle rapid scrolling, reverse scrolling, manual selection, window resizing, and returning from moon or interior exploration.
+
+If the project uses GSAP ScrollTrigger, inspect the existing trigger start/end values, timelines, refresh behavior, and cleanup logic before changing them.
+
+Do not introduce a second competing camera animation system.
+
+## 1.3 Preserve the existing solar-system journey
+
+The main 3D scene must remain persistent throughout the scroll experience.
+
+- Planetary rotation continues while the scene is active.
+- Scrolling produces meaningful camera travel through the solar system.
+- Each major section has an intentional visual composition.
+- Planet selection and moon selection do not permanently break scroll navigation.
+- Returning from a focused object restores the expected solar-system context.
+- The existing educational sections, comparison content, quiz, navigation, and language controls remain available.
+
+---
+
+# PHASE 2 — FIX MOON SELECTION AND FOCUS
+
+This is a critical interaction defect.
+
+Currently, when a user clicks a moon, the moon may continue orbiting among many other moons. The camera angle is poor, the target becomes difficult to distinguish, and the user cannot confidently tell which moon they selected.
+
+For example, when Jupiter's moons are visible together, selecting Io must not leave Io lost among several overlapping orbit paths and similar-looking objects.
+
+**A moon click must produce a clear, unmistakable transition into focused moon exploration.**
+
+## 2.1 Select the actual 3D moon
+
+Implement or repair actual object selection using the project's existing Three.js interaction mechanism.
+
+- Use raycasting or the existing reliable mesh-picking mechanism.
+- Ensure that the selected mesh maps to the correct moon data record.
+- Make sure the hit target is large enough for practical interaction.
+- Support mouse, touch, and keyboard-accessible alternatives where appropriate.
+- Avoid selecting the host planet or a neighboring moon when the user intended to select a moon.
+- Handle intersections with orbit lines and transparent visual effects so they do not incorrectly block selection.
+- If a moon has an enlarged invisible hit area for usability, keep that hit area attached to the correct moon and do not let it interfere with nearby objects.
+
+The selected moon's identity must be stored explicitly in application state.
+
+Do not infer the selected moon from its current array index, visual position, or nearest label.
+
+## 2.2 Camera transition when a moon is selected
+
+When a user selects a moon:
+
+1. Resolve the selected moon's actual world-space position.
+2. Identify its parent planet.
+3. Begin a smooth camera transition toward the selected moon.
+4. Recalculate the moon's world-space position continuously while it orbits.
+5. Keep the camera focused on the selected moon rather than its old position.
+6. Frame the moon large enough to identify its surface and features.
+7. Preserve enough contextual information to show which planet the moon orbits.
+8. Avoid collisions with the parent planet, other moons, and the Sun where possible.
+9. Maintain a useful viewing angle and reasonable camera distance.
+10. Keep the transition smooth even if the user selects a different moon during the animation.
+
+The camera must follow the selected moon as it continues moving along its orbit.
+
+Do not animate the camera to a stale position and then leave the moon behind.
+
+Do not force every moon into the same camera distance. Small moons may require a carefully limited visual zoom or a close-up presentation mode.
+
+If orbital distances or moon sizes are exaggerated for visibility, preserve a clear distinction between the educational display and actual astronomical scale.
+
+## 2.3 Make the selected moon visually unmistakable
+
+The selected moon must become the clear visual focus.
+
+Use a combination of appropriate techniques:
+
+- Smooth camera focus.
+- Improved screen-space framing.
+- A restrained outline or rim highlight.
+- A subtle selection glow or localized illumination where appropriate.
+- A brief, restrained selection pulse if it does not harm readability.
+- A clear visual distinction from nearby moons.
+- A selected-moon label or name tag.
+- A contextual orbit or parent-planet indicator.
+- A clear indication of the moon's parent planet.
+
+The highlight must remain readable against the background and must not turn the moon into an unrealistic glowing sphere.
+
+Do not rely only on a tiny color change.
+
+Do not enlarge the moon's physical mesh in a way that silently misrepresents its size. If visual enlargement is needed, use a separate selection effect, camera zoom, or clearly identified close-up presentation.
+
+## 2.4 Resolve ambiguity between nearby moons
+
+When several moons are near one another on screen:
+
+- The selected moon's name must be clearly visible.
+- The information panel must identify the exact moon.
+- The host planet must be identified separately.
+- Neighboring moons must not inherit the selected moon's label or highlight.
+- Orbit lines should not obscure the selected moon.
+- Temporarily reduce the visual prominence of unrelated orbit paths when necessary.
+- Keep the selected moon visually distinct even if it continues orbiting.
+- Do not freeze the entire solar system unnecessarily just to make the moon readable.
+
+A focused mode may temporarily simplify unrelated visual effects, but it must preserve the sense of a living 3D solar system.
+
+## 2.5 Moon exploration controls
+
+When a moon is selected, provide clear controls such as:
+
+- Return to parent planet.
+- Return to solar-system overview.
+- Close moon information.
+- Explore another moon.
+- Recenter the camera, if practical.
+
+The return action must restore a valid camera position and the appropriate information card.
+
+The user must never become trapped in a moon-focused state.
+
+---
+
+# PHASE 3 — SYNCHRONIZE MOON INFORMATION AND CAMERA STATE
+
+When a moon is selected, show a dedicated moon information panel without waiting for the previous section or animation to finish.
+
+The panel should appear at the beginning of the moon-focus transition or immediately after selection, using an intentional transition.
+
+Display, where supported by reliable data:
+
+- Moon name in Persian and English where available.
+- Parent planet.
+- Approximate mean diameter.
+- Approximate mass.
+- Mean density.
+- Surface gravity, where meaningful and supported.
+- Orbital period around the parent planet.
+- Mean orbital distance.
+- Orbital eccentricity.
+- Orbital inclination, with its reference plane identified.
+- Rotation or synchronous-rotation information where relevant.
+- Surface or atmospheric characteristics.
+- Important geological or scientific features.
+- A short educational explanation.
+- Scientific source references.
+
+Do not display invented values or imply that every moon has a well-defined solid surface.
+
+Distinguish estimates from measured values and state when an orbital or physical value is approximate.
+
+## Jupiter example
+
+For Jupiter, provide a dedicated moon explorer featuring at least:
+
+- Io.
+- Europa.
+- Ganymede.
+- Callisto.
+
+Each moon must have its own data record, visual identity, selection state, and camera-focus behavior.
+
+Io should not accidentally display Europa's information or remain visually indistinguishable from another moon.
+
+Use recognizable surface characteristics where suitable assets or procedural materials are available:
+
+- Io: volcanic surface and sulfur-related coloration.
+- Europa: icy surface and prominent fracture patterns.
+- Ganymede: large icy body with varied surface terrain.
+- Callisto: heavily cratered surface.
+
+These should be scientifically inspired visualizations, not arbitrary colored spheres.
+
+## Other moon systems
+
+Preserve and improve the existing moon data where available, prioritizing:
+
+- Earth's Moon.
+- Phobos and Deimos.
+- Titan and Enceladus.
+- Titania and Oberon.
+- Triton.
+
+Use a curated subset of moons in the main scene to maintain visual clarity and performance.
+
+Additional moons can be explored through a list or secondary selector.
+
+Do not attempt to render every known moon with maximum detail simultaneously.
+
+---
+
+# PHASE 4 — REBUILD PLANETARY SURFACE REALISM
+
+The current planetary appearances are too simplistic. A blue sphere with several brown spots is not an acceptable final Earth model, and a plain yellow sphere is not an acceptable final Sun model.
+
+Improve the actual 3D materials, geometry, textures, and lighting.
+
+## 4.1 Earth
+
+Earth should have:
+
+- Recognizable continent shapes and realistic ocean distribution.
+- Suitable terrain and coastline detail.
+- A separate cloud layer.
+- A convincing atmospheric rim.
+- Appropriate day/night lighting.
+- A visible terminator between illuminated and unilluminated regions.
+- Natural polar and geographic details.
+- Continuous, plausible rotation.
+- Correctly oriented surface features.
+
+The model should be recognizably Earth from a normal viewing distance.
+
+Do not use a generic blue material with scattered random dots.
+
+## 4.2 Sun
+
+The Sun must look like a luminous, active plasma body.
+
+Where computationally practical, implement:
+
+- Solar surface granulation-like patterns.
+- Convincing emission and luminous color variation.
+- Animated plasma-like surface motion.
+- Solar prominences or loops.
+- A restrained corona and atmospheric glow.
+- Carefully controlled bloom or post-processing.
+- A physically inspired light source that illuminates nearby planets.
+
+Where appropriate, include an educational explanation of nuclear fusion in the core and the transport of energy through the Sun.
+
+Do not portray the Sun as a solid sphere covered in ordinary flames.
+
+Do not label randomly generated particles as scientifically accurate solar flares.
+
+Any simulated activity must be presented as a visualization, not real-time observational data.
+
+## 4.3 Other planets
+
+Use appropriate surface detail for each planet:
+
+- Mercury: heavily cratered rocky terrain.
+- Venus: thick cloud cover and distinctive atmospheric appearance.
+- Mars: reddish terrain, craters, and large-scale surface features.
+- Jupiter: atmospheric bands, storms, and the Great Red Spot.
+- Saturn: detailed ring geometry, divisions, and suitable shadows.
+- Uranus: pale cyan atmospheric appearance.
+- Neptune: deep blue atmosphere with appropriate atmospheric detail.
+
+Use individual materials and textures rather than applying one generic shader with different colors.
+
+## 4.4 Texture quality and performance
+
+- Prefer reputable, legally usable scientific textures.
+- Use procedural shaders only when they produce meaningful detail.
+- Do not rely on inaccessible external image URLs for essential objects.
+- Optimize textures and GPU memory.
+- Handle missing assets gracefully.
+- Reuse geometry and materials where possible.
+- Dispose of unused GPU resources correctly.
+- Maintain usable performance on ordinary school computers.
+
+The goal is the highest practical visual and scientific fidelity. Do not promise perfect realism if the implementation cannot support it.
+
+---
+
+# PHASE 5 — ADD THE INTERACTIVE INTERIOR EXPLORER
+
+Add a user-controlled interior-exploration mode to the planetary information panel.
+
+Do not automatically split planets during ordinary scrolling.
+
+When a planet is selected, show an action such as:
+
+"Explore Interior" / "ساختار داخلی"
+
+When activated:
+
+1. Animate the camera and selected object into an appropriate educational viewing position.
+2. Transition from the exterior view into a true 3D cutaway or cross-section.
+3. Reveal the relevant internal layers.
+4. Provide selectable layers and scientific labels.
+5. Display contextual information about the selected layer.
+6. Provide a visible return-to-exterior control.
+7. Restore the original solar-system context when the user exits.
+
+The selected planet's interior state must not break the scroll journey or interfere with the selected-object state.
+
+## 5.1 Earth interior
+
+Display these layers:
+
+- Crust.
+- Mantle.
+- Outer core.
+- Inner core.
+
+Use distinguishable 3D geometry, appropriate relative thicknesses, and readable labels.
+
+Because the crust is extremely thin compared with Earth's radius, provide an educational cutaway or exaggerated cross-section when needed for visibility. Clearly indicate any exaggeration.
+
+For each layer, provide supported information about:
+
+- Approximate depth or thickness.
+- Main composition.
+- Temperature range, when supported.
+- Physical state.
+- Geological role.
+- A short explanation suitable for a school presentation.
+
+Avoid invented exact values.
+
+## 5.2 Sun interior
+
+Use a Sun-specific structure:
+
+- Core.
+- Radiative zone.
+- Convective zone.
+- Photosphere.
+- Chromosphere.
+- Corona.
+
+Clearly distinguish internal regions from the visible solar atmosphere.
+
+Explain fusion and energy transport without implying that the Sun has a solid surface.
+
+## 5.3 Other planetary interiors
+
+Use scientifically appropriate models for rocky planets and giant planets.
+
+Do not copy the Earth's crust–mantle–core structure onto every planet.
+
+Where the structure is model-dependent or uncertain, label it as an inferred scientific model.
+
+---
+
+# PHASE 6 — SCIENTIFIC DATA AND SOURCES
+
+Expand the structured data for planets and moons.
+
+Include relevant fields such as:
+
+- Mean diameter.
+- Mass.
+- Density.
+- Gravity, with the definition clearly identified.
+- Rotation period.
+- Orbital period.
+- Mean orbital distance or semi-major axis.
+- Orbital eccentricity.
+- Orbital inclination and its reference plane.
+- Temperature, with the measurement or model definition identified.
+- Atmospheric composition.
+- Known moons, where a current sourced count is available.
+- Major moons.
+- Interior structure.
+- Distinctive characteristics.
+
+Use reliable sources such as NASA, NASA Solar System Exploration, NASA Planetary Fact Sheet, JPL, or other reputable scientific references appropriate to the data.
+
+Requirements:
+
+- Keep units consistent.
+- Use sensible significant figures.
+- Identify approximate and model-dependent values.
+- Preserve source URLs for scientific facts.
+- Never invent citations or retrieval dates.
+- Avoid presenting all values as equally certain.
+- Explain scientific concepts in clear Persian suitable for a school science presentation.
+- Preserve English names and scientific terminology where helpful.
+
+Do not display irrelevant or unsupported data fields.
+
+---
+
+# PHASE 7 — RESPONSIVE HEADER AND MOBILE LAYOUT
+
+Preserve the existing visual identity while repairing mobile and tablet behavior.
+
+## Header
+- Keep the current desktop navigation where it works.
+- Use a hamburger menu on mobile and tablet.
+- Open a readable dropdown panel from the top.
+- Make each destination navigable.
+- Close the menu after navigation.
+- Support Escape, an explicit close control, accessible states, and appropriate keyboard interaction.
+- Prevent the menu from covering essential 3D controls.
+
+## Mobile layout
+Test at widths of:
+
+- 360 px.
+- 390 px.
+- 430 px.
+- 768 px.
+- 1024 px.
+- 1280 px.
+- 1440 px.
+
+Repair oversized information cards, horizontal overflow, overlapping panels, clipped text, and inappropriate section heights.
+
+Ensure planet and moon selection is usable by touch.
+
+The selected-object information panel must not hide the focused celestial body.
+
+Adapt the moon selector and interior-layer selector for narrow screens.
+
+Preserve RTL layout in Persian and LTR layout in English.
+
+---
+
+# PHASE 8 — DEPENDENCY STABILITY AND WINDOWS SETUP
+
+The project previously failed during npm installation because the requested Vite and esbuild versions were incompatible.
+
+Audit the entire dependency set rather than changing only one version.
+
+- Verify compatibility among Node.js, npm, Vite, esbuild, the React plugin, TypeScript, Tailwind CSS v4, Three.js, and related type packages.
+- Choose a coherent set of stable versions supported by the relevant packages.
+- Do not upgrade dependencies blindly.
+- Fix the underlying dependency conflict.
+- Regenerate and retain a valid package-lock file.
+- Ensure a clean `npm ci` works.
+- Ensure the TypeScript check and production build work.
+- Keep setup instructions compatible with Windows PowerShell.
+- Replace Unix-only scripts if they prevent normal Windows usage.
+- Do not use `--force` or `--legacy-peer-deps` as the permanent fix.
+- Do not rely on my laptop's existing node_modules, npm cache, or private local configuration.
+
+Document the required Node.js and npm versions and the commands needed to install and run the project on another compatible Windows computer.
+
+Do not claim that a command passed unless it was actually executed and its result was verified.
+
+---
+
+# PHASE 9 — STATE MANAGEMENT AND INTERACTION INTEGRITY
+
+Coordinate these states explicitly:
+
+- Active scroll section.
+- Currently focused planet.
+- Currently selected moon.
+- Parent planet of the selected moon.
+- Active information card.
+- Interior-exploration mode.
+- Selected interior layer.
+- Camera transition and camera target.
+
+Prevent inconsistent combinations such as:
+
+- A Jupiter information card with the camera focused on Earth.
+- A selected Io mesh with Europa's information displayed.
+- A moon-focused camera while the planet card claims another object is selected.
+- An interior layer panel remaining open after the user returns to the exterior.
+- A moon selector becoming detached from the active parent planet.
+- Duplicate camera animations fighting over the same camera.
+- Stale world-space positions after an orbit update.
+
+Use a consistent and maintainable state model.
+
+Ensure animations and state transitions can be interrupted safely when the user selects another object.
+
+Clean up event listeners, observers, animation timelines, and 3D resources appropriately.
+
+---
+
+# PHASE 10 — ACCEPTANCE TESTS
+
+Before declaring the project ready, perform the following checks.
+
+## Camera and cards
+- Scroll into the Earth section and verify the camera frames Earth correctly.
+- Verify the Earth card appears at the start of the intended transition.
+- Verify the card never waits until the section ends.
+- Repeat for Jupiter, Saturn, and the other featured planetary sections.
+- Scroll quickly forward and backward and confirm the correct card and camera target remain synchronized.
+
+## Moon selection
+- Navigate to Jupiter.
+- Select Io.
+- Confirm that the actual Io mesh is selected.
+- Confirm the camera transitions smoothly and follows Io's moving world-space position.
+- Confirm Io becomes visually distinct from Europa, Ganymede, and Callisto.
+- Confirm the correct name, parent planet, and scientific information are displayed.
+- Select another moon while focused and confirm the transition and information update correctly.
+- Return to Jupiter and confirm the camera and planet information are restored.
+- Repeat the selection flow for Earth's Moon and at least one other moon system.
+
+## Interior exploration
+- Select Earth and enter interior mode.
+- Verify the four Earth layers are actual 3D geometry.
+- Select each layer and confirm the correct label and information appear.
+- Exit and confirm the exterior model and scroll position are restored.
+- Verify that the Sun uses its own appropriate structure and that other supported planetary interiors are not incorrectly copied from Earth.
+
+## Visual quality
+- Verify Earth has recognizable geographic detail.
+- Verify the Sun has a detailed, luminous, plasma-like appearance.
+- Verify Jupiter's bands and Great Red Spot.
+- Verify Saturn's rings and the distinct surface features of other planets.
+- Confirm the models remain usable and visually clear on mobile.
+
+## Build and portability
+- Run a clean dependency installation.
+- Run the available TypeScript validation.
+- Run the production build.
+- Test the development server.
+- Document any test that could not be executed in the available environment.
+
+---
+
+# FINAL DELIVERY REPORT
+
+Provide a concise, truthful report containing:
+
+1. The root cause of the camera and information-card timing regression.
+2. The actual fixes made to camera framing and scroll synchronization.
+3. How moon selection, camera following, and moon highlighting work.
+4. Which planetary materials and textures were improved.
+5. Which interior models are fully implemented.
+6. The scientific sources used.
+7. The actual dependency versions selected and the compatibility rationale.
+8. The installation, TypeScript, and build results.
+9. The viewport sizes and interactions actually tested.
+10. Remaining limitations.
+
+Do not replace the project with a static mockup.
+
+Do not claim that moons are selectable unless actual mesh selection works.
+
+Do not claim that the camera follows a moon unless it continuously updates its target.
+
+Do not claim that planetary interiors are implemented unless the rendered 3D geometry genuinely reveals the intended structure.
+
+Do not fabricate scientific data or test results.
+
+**Execution priority: restore camera and card timing first; fix moon selection and focused camera behavior second; improve actual planetary surface rendering third; implement interior exploration fourth; then complete responsive, dependency, and validation work. Preserve the existing working experience throughout.**

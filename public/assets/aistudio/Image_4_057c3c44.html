@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;family=Vazirmatn:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-primary":"#00677f","secondary":"#b2c5ff","on-secondary-container":"#99b3ff","primary":"#c4eeff","surface-bright":"#353945","on-error-container":"#ffdad6","surface-container-low":"#181b26","on-background":"#dfe2f1","on-surface-variant":"#bdc8ce","on-error":"#690005","primary-fixed":"#b7eaff","on-tertiary-fixed":"#281800","secondary-fixed-dim":"#b2c5ff","outline":"#879398","on-primary-container":"#005d74","inverse-surface":"#dfe2f1","on-primary":"#003543","surface-variant":"#313440","error":"#ffb4ab","on-secondary-fixed-variant":"#1d4292","surface-container-lowest":"#0a0e18","tertiary-fixed":"#ffddb0","on-tertiary-container":"#744e01","secondary-container":"#1d4292","surface-container-high":"#262a35","outline-variant":"#3d484d","error-container":"#93000a","surface-dim":"#0f131e","surface-container-highest":"#313440","surface-container":"#1c1f2a","on-surface":"#dfe2f1","tertiary":"#ffe3bf","on-tertiary-fixed-variant":"#614000","tertiary-container":"#f8c270","secondary-fixed":"#dae2ff","inverse-on-surface":"#2c303c","surface":"#0f131e","on-secondary-fixed":"#001848","surface-tint":"#60d4fa","on-primary-fixed-variant":"#004e60","on-primary-fixed":"#001f28","on-secondary":"#002b74","primary-container":"#65d9ff","primary-fixed-dim":"#60d4fa","tertiary-fixed-dim":"#f3bd6b","background":"#0f131e","on-tertiary":"#442c00"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin":"2.5rem","gutter-mobile":"0.75rem","space-xl":"2.5rem","space-xs":"0.25rem","space-md":"1rem","gutter":"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-mobile":"1rem"},fontFamily:{"label-mono-sm":["Space Mono"],"body-md":["Sora"],"headline-lg-mobile":["Space Grotesk"],"label-mono-lg":["Space Mono"],"body-sm":["Sora"],"display-hero":["Space Grotesk"],"display-hero-mobile":["Space Grotesk"],"headline-lg":["Space Grotesk"],"headline-md":["Space Grotesk"],"body-lg":["Sora"],"headline-sm":["Space Grotesk"]},fontSize:{"label-mono-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-mono-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"68px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Space Explorer Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VDQ7FIUi5LbWiF9wkUl-DzldX_wUVb2oOP0W5T1wryF7kk0ufenr1Y8mvwiINk2WLILNFuhkzvtQ71biBRhRm3gUO2DxFzzWlIwz69OQvfJJVBq_fovPBJACNrlfteI6vkoGldtH7EQe8-o1mJ5cTgbMq93F53fqFOoHZMEcbYw3HA6eRJIpX4Im6LihxRQJs9OAoLenWNd8OAd-R9weoVgNtIMcegB0yAzwBDwaLNPAJQ784aGJyn1K0"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">کاوشگر فضا</span><span class="text-outline font-label-mono-sm text-label-mono-sm">/</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Space Explorer</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">سفر به اعماق منظومه شمسی</span></div></div><nav class="hidden lg:flex items-center gap-space-sm bg-surface-container-low/60 p-space-xs rounded-xl backdrop-blur-md" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><a class="px-space-md py-space-xs text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="explore" href="#">کاوش سیارات (Planets)</a><a class="px-space-md py-space-xs text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="compare" href="#">بررسی و مقایسه (Compare)</a><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="curriculum" href="#">آموزش پایه ۹ (Learn)</a><a class="px-space-md py-space-xs text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="quiz" href="#">آزمون کیهانی (Quiz)</a><a class="px-space-md py-space-xs text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="settings" href="#">تنظیمات (Settings)</a></nav><div class="flex items-center gap-space-sm"><div class="flex items-center bg-surface-container-high/60 rounded-lg p-space-xs backdrop-blur-md"><button class="px-space-sm py-space-xs font-label-mono-sm text-label-mono-sm rounded bg-primary-container text-on-primary-container" type="button">FA</button><button class="px-space-sm py-space-xs font-label-mono-sm text-label-mono-sm rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors" type="button">EN</button></div><button class="w-10 h-10 rounded-lg bg-surface-container-high/60 hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors backdrop-blur-md" title="Ambient Audio Telemetry" type="button"><span class="material-symbols-outlined text-base">graphic_eq</span></button><button class="w-10 h-10 rounded-lg bg-surface-container-high/60 hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors backdrop-blur-md" title="Orbital Trajectories HUD" type="button"><span class="material-symbols-outlined text-base">orbit</span></button><div class="h-6 w-px bg-outline-variant mx-space-xs hidden sm:block"></div><div class="flex items-center gap-space-xs bg-surface-container-high/50 p-space-xs rounded-full backdrop-blur-md"><div class="text-left rtl:text-right hidden sm:block px-space-xs"><p class="font-label-mono-sm text-label-mono-sm text-primary">COMMANDER</p><p class="font-body-sm text-body-sm text-on-surface leading-none">متخصص کاوش</p></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU1XWXcWTsW8UM1D7diUif1kyTi-dSLUXatPkUYZ6fWNugdz_3um3GRsDGxiXlTGFdd3VSwdMu-ZOoIhsWEEecjg0D62UIc_CoPBcTBjA96dEkuHWBvWuSt-X1mdCgNMx4uM1IdN924RGtiF7PSsqiZK-NxEggIRlKm4PWGCoH2YYt6KuAsoSFPsn9QSKRzEJTewrd1dK-_k2kviFS28IpGGc3VilBtKu5AvvJvqaFjiEP1wo3xBnI"/></div></div></div></header><main class="w-full pt-20 pb-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Atmospheric Glow Underlay -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute top-0 right-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 left-10 w-80 h-80 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute bottom-20 right-10 w-96 h-96 bg-tertiary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<!-- Hero / Chapter Header Matrix -->
+<section class="w-full px-gutter py-space-xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Breadcrumb & Telemetry Metadata -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono-sm text-label-mono-sm">
+<span class="text-primary font-bold">EDU.IR // GRADE_09</span>
+<span>•</span>
+<span>فصل ۱۰: نگاهی به فضا</span>
+<span>•</span>
+<span class="text-tertiary-container">پایگاه مرجع یادگیری علوم تجربی</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-xs rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">SYLLABUS STATUS: SYNCED 1403-1404</span>
+</div>
+</div>
+<!-- Main Chapter Banner Bento -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-stretch">
+<div class="lg:col-span-8 bg-surface-container-low/80 backdrop-blur-xl p-space-xl rounded-xl shadow-xl flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -left-12 -bottom-12 w-48 h-48 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex flex-col gap-space-sm z-10">
+<div class="inline-flex items-center gap-space-xs bg-surface-container-highest/80 text-primary px-space-sm py-space-xs rounded-lg w-fit">
+<span class="material-symbols-outlined text-base">auto_stories</span>
+<span class="font-label-mono-sm text-label-mono-sm">CURRICULUM MODULE • فصل دهم</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+                پایگاه یادگیری منظومه شمسی
+              </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                تحلیل جامع، مصور و پرسش‌محور مفاهیم کیهان‌شناسی و مکانیک منظومه خورشیدی منطبق بر سرفصل‌های رسمی علوم تجربی پایه نهم همراه با نمودارهای طیفی و نکات تستی امتحانات هماهنگ استانی.
+              </p>
+</div>
+<!-- Key Quick Metrics -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-xl z-10">
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">موضوعات کلیدی</span>
+<span class="font-headline-sm text-headline-sm text-primary">۸ پودمان</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">قدمت پیدایش</span>
+<span class="font-headline-sm text-headline-sm text-tertiary">۴.۶ Gyr</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">تمرکز آزمون</span>
+<span class="font-headline-sm text-headline-sm text-secondary">نهایی / تیزهوشان</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">مدت مطالعه</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">۴۵ دقیقه</span>
+</div>
+</div>
+</div>
+<!-- Side Action Hub: Flashcard Quick Trigger & Visual -->
+<div class="lg:col-span-4 bg-surface-container-high/60 backdrop-blur-xl p-space-lg rounded-xl shadow-xl flex flex-col justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-primary">QUICK REVISION ENGINE</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">جعبه ابزار مرور سریع</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                مرور کلیدواژه‌ها، فرمول‌های گرانشی، و سوالات پرتکرار خرداد ماه قبل از ورود به جلسه آزمون.
+              </p>
+</div>
+<div class="flex flex-col gap-space-sm">
+<a class="w-full py-space-sm px-space-md bg-primary-container text-on-primary-container font-headline-sm text-headline-sm rounded-lg flex items-center justify-center gap-space-xs hover:brightness-110 transition-all shadow-md" href="#flashcards-section">
+<span class="material-symbols-outlined">quiz</span>
+<span>ورود به فلش‌کارت‌های هوشمند</span>
+</a>
+<button class="w-full py-space-sm px-space-md bg-surface-container-highest text-on-surface font-body-md text-body-md rounded-lg flex items-center justify-center gap-space-xs hover:bg-surface-bright transition-all" onclick="window.print()" type="button">
+<span class="material-symbols-outlined">print</span>
+<span>چاپ جزوه خلاصه امتحانی (PDF)</span>
+</button>
+</div>
+<div class="p-space-xs bg-surface-container-lowest/80 rounded-lg flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary-container">verified</span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">تایید شده توسط دبیرخانه کشوری علوم</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Syllabus Interactive Syllabus Modules (Accordions + Visual Telemetry) -->
+<section class="w-full px-gutter py-space-lg">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="font-label-mono-sm text-label-mono-sm text-primary mb-space-xs">PEDAGOGICAL SYLLABUS MATRIX</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">پودمان‌های آموزشی فصل دهم</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-space-xs bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm rounded-lg transition-colors" id="expandAllBtn" type="button">
+              باز کردن همه بخش‌ها
+            </button>
+<button class="px-space-md py-space-xs bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-body-sm text-body-sm rounded-lg transition-colors" id="collapseAllBtn" type="button">
+              بستن همه
+            </button>
+</div>
+</div>
+<!-- Module Accordion List -->
+<div class="flex flex-col gap-space-md" id="curriculumList">
+<!-- Module 1: Solar Nebula Hypothesis -->
+<article class="module-card bg-surface-container-low/90 backdrop-blur-md rounded-xl overflow-hidden shadow-lg transition-all" data-expanded="false">
+<button class="w-full p-space-lg flex items-center justify-between text-right cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors module-trigger" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-label-mono-lg text-label-mono-lg">
+                  01
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">منظومه شمسی چیست؟ و نحوه پیدایش آن</span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline hidden sm:inline">(Solar Nebula Origin)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فرضیه سحابی خورشیدی، تراکم ابر گاز و غبار در ۴.۶ میلیارد سال پیش</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-primary hidden md:inline">۴.۶ Gyr Ago</span>
+<span class="material-symbols-outlined text-on-surface-variant transform transition-transform duration-300 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="module-content hidden p-space-lg bg-surface-container/40">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                    منظومه شمسی مجموعه‌ای متشکل از یک ستاره مرکزی به نام <strong class="text-primary font-headline-sm">خورشید</strong> و کلیه اجرام در مدار گرانشی آن (شامل ۸ سیاره، سیارات کوتوله، اقمار، سیارک‌ها، شهاب‌وارها و دنباله‌دارها) است. بر اساس نظریه پذیرفته‌شده علمی، این سامانه حدود <strong>۴.۶ میلیارد سال پیش</strong> بر اثر فروریزش گرانشی یک ابر مولکولی عظیم بین‌ستاره‌ای (سحابی خورشیدی خنک) شکل گرفت.
+                  </p>
+<div class="bg-surface-container-high/80 p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-tertiary-container font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined">tips_and_updates</span>
+<span>نکته طلایی امتحان نهایی علوم نهم:</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                      اکثر جرم سحابی اولیه (حدود ۹۹.۸۶٪) در مرکز متراکم شده و خورشید را تشکیل داد. دیسک پیش‌سیاره‌ای اطراف، با افزایش سرعت دوران خود به دور مرکز، به مرور زمان سیارات و اجرام دیگر را پدید آورد.
+                    </p>
+</div>
+<div class="grid grid-cols-3 gap-space-sm text-center">
+<div class="p-space-xs bg-surface-container rounded-lg">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">سن تخمینی</span>
+<p class="font-label-mono-lg text-label-mono-lg text-primary">4.6×10⁹ YR</p>
+</div>
+<div class="p-space-xs bg-surface-container rounded-lg">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">سهم جرم خورشید</span>
+<p class="font-label-mono-lg text-label-mono-lg text-tertiary">99.86%</p>
+</div>
+<div class="p-space-xs bg-surface-container rounded-lg">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">شعاع تقریبی هلیوپاز</span>
+<p class="font-label-mono-lg text-label-mono-lg text-secondary">~120 AU</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<div class="w-full h-56 rounded-xl overflow-hidden relative shadow-md">
+<img class="w-full h-full object-cover" data-alt="Scientific 3D rendering of the primordial solar nebula condensing into a luminous protosun with swirling accretion disks of gas and glowing dust particles, rich deep dark space hues with brilliant cyan and warm amber plasma flares, educational textbook aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZprfKzGzuDDrxV4Ar7BVsrFywrATwOsImr9Lav2I2Pe0qb7E_sodaRjWzBjgSubiJG5Wbq8bqBgpdw0yzl1w0CUEKsEnEIMRnWhRMAfaediHTm8rxpO2EfLP746ACbVgUAoZ5Zm2_prSS-MxxNlXAPJuiesZCgPO1yHGfWcOLT28Nozjlm5mqca8PnflyevdGEaLBLyQR5CGwDAlwow7Zhcq1ro0OLxica4XLXE0x_KNbhT-0tKsc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<span class="absolute bottom-2 right-3 font-label-mono-sm text-label-mono-sm text-primary">FIG 10-1: رمبش سحابی خورشیدی اولیه</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Module 2: The Sun and Nuclear Fusion -->
+<article class="module-card bg-surface-container-low/90 backdrop-blur-md rounded-xl overflow-hidden shadow-lg transition-all" data-expanded="false">
+<button class="w-full p-space-lg flex items-center justify-between text-right cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors module-trigger" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-label-mono-lg text-label-mono-lg">
+                  02
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">خورشید و فرآیند تولید انرژی</span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline hidden sm:inline">(Nuclear Fusion &amp; Solar Wind)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">واکنش همجوشی هسته‌ای هیدروژن به هلیوم، لایه‌های خورشید و بادهای خورشیدی</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary hidden md:inline">4H → He + Energy</span>
+<span class="material-symbols-outlined text-on-surface-variant transform transition-transform duration-300 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="module-content hidden p-space-lg bg-surface-container/40">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                    خورشید تنها ستاره منظومه ماست که انرژی عظیم خود را از طریق فرایند <strong>همجوشی هسته‌ای (Nuclear Fusion)</strong> در هسته با دمای تقریبی ۱۵ میلیون درجه سانتی‌گراد تامین می‌کند. در این واکنش، هسته‌های هیدروژن با یکدیگر پیوند خورده و به هلیوم تبدیل می‌شوند؛ باقیمانده جرم طبق رابطه انیشتین به فوتون‌های نوری و حرارت آزاد تبدیل می‌گردد.
+                  </p>
+<div class="bg-surface-container-high/80 p-space-md rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined">cyclone</span>
+<span>بادهای خورشیدی (Solar Wind) و شفق‌های قطبی:</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                      جریانی از ذرات باردار پرانرژی (پروتون‌ها و الکترون‌ها) به طور مداوم از تاج خورشیدی به فضای منظومه پرتاب می‌شوند. برخورد این ذرات با میدان مغناطیسی زمین (مگنتوسفر) و گازهای یونوسفر موجب پدیده تماشایی شفق قطبی (Aurora) می‌شود.
+                    </p>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface">معادله موازنه‌ای کتاب علوم نهم:</span>
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary-container bg-surface-container-lowest px-space-sm py-space-xs rounded">4 ¹H → ⁴He + 2e⁺ + 2ν + 26.7 MeV</span>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-xs">
+<!-- Inline SVG of Nuclear Reaction Schema -->
+<div class="w-full bg-surface-container-high p-space-md rounded-xl flex flex-col items-center justify-center">
+<svg class="w-full h-auto max-h-40" fill="none" viewbox="0 0 320 160">
+<circle class="text-primary/30" cx="50" cy="50" fill="currentColor" r="16"></circle>
+<circle class="text-primary" cx="50" cy="50" fill="currentColor" r="10"></circle>
+<text fill="#003543" font-family="Space Mono" font-size="10" font-weight="bold" text-anchor="middle" x="50" y="54">¹H</text>
+<circle class="text-primary/30" cx="50" cy="110" fill="currentColor" r="16"></circle>
+<circle class="text-primary" cx="50" cy="110" fill="currentColor" r="10"></circle>
+<text fill="#003543" font-family="Space Mono" font-size="10" font-weight="bold" text-anchor="middle" x="50" y="114">¹H</text>
+<path class="text-outline" d="M75 50 Q 130 80 150 80" stroke="currentColor" stroke-dasharray="3 3"></path>
+<path class="text-outline" d="M75 110 Q 130 80 150 80" stroke="currentColor" stroke-dasharray="3 3"></path>
+<!-- Core Reaction Node -->
+<circle class="text-tertiary-container/30 animate-pulse" cx="160" cy="80" fill="currentColor" r="24"></circle>
+<circle class="text-tertiary-container" cx="160" cy="80" fill="currentColor" r="16"></circle>
+<text fill="#442c00" font-family="Space Mono" font-size="11" font-weight="bold" text-anchor="middle" x="160" y="84">FUSION</text>
+<path class="text-secondary" d="M190 80 L 240 50" stroke="currentColor" stroke-width="2"></path>
+<circle class="text-secondary/40" cx="260" cy="50" fill="currentColor" r="18"></circle>
+<circle class="text-secondary" cx="260" cy="50" fill="currentColor" r="12"></circle>
+<text fill="#002b74" font-family="Space Mono" font-size="11" font-weight="bold" text-anchor="middle" x="260" y="54">⁴He</text>
+<path class="text-primary-container" d="M190 80 L 240 110" stroke="currentColor" stroke-width="2"></path>
+<text class="text-primary-container font-label-mono-sm text-label-mono-sm font-bold" fill="currentColor" x="255" y="114">ENERGY (γ)</text>
+</svg>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant mt-space-xs">نمودار سنتز هسته‌ای درون هسته خورشید</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Module 3: Terrestrial vs Jovian Planets -->
+<article class="module-card bg-surface-container-low/90 backdrop-blur-md rounded-xl overflow-hidden shadow-lg transition-all" data-expanded="false">
+<button class="w-full p-space-lg flex items-center justify-between text-right cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors module-trigger" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-label-mono-lg text-label-mono-lg">
+                  03
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">سیارات درونی در برابر بیرونی</span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline hidden sm:inline">(Terrestrial vs Jovian)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">مقایسه جنس، چگالی میانگین، تعداد قمرها و حلقه‌ها</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary hidden md:inline">۴ سنگی / ۴ گازی</span>
+<span class="material-symbols-outlined text-on-surface-variant transform transition-transform duration-300 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="module-content hidden p-space-lg bg-surface-container/40">
+<div class="flex flex-col gap-space-md">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                  کمربند اصلی سیارک‌ها مرز حائل بین دو دسته بزرگ سیاره‌ای است: سیارات درونی (عطارد، ناهید، زمین، مریخ) که دارای سطحی جامد و سنگی هستند و سیارات بیرونی (مشتری، زحل، اورانوس، نپتون) که عمدتا از گاز و مایع تشکیل شده‌اند.
+                </p>
+<!-- Comparison Matrix Table -->
+<div class="w-full overflow-x-auto rounded-lg bg-surface-container">
+<table class="w-full text-right font-body-md text-body-md">
+<thead>
+<tr class="bg-surface-container-high text-on-surface font-headline-sm text-headline-sm">
+<th class="p-space-sm">ویژگی مقایسه‌ای</th>
+<th class="p-space-sm text-primary">سیارات درونی (زمین‌مانند)</th>
+<th class="p-space-sm text-secondary">سیارات بیرونی (مشتری‌مانند)</th>
+</tr>
+</thead>
+<tbody class="text-on-surface-variant">
+<tr class="hover:bg-surface-container-highest/40 transition-colors">
+<td class="p-space-sm font-bold text-on-surface">سیارات عضو</td>
+<td class="p-space-sm">تیر (عطارد)، ناهید (زهره)، زمین، بهرام (مریخ)</td>
+<td class="p-space-sm">برجیس (مشتری)، کیوان (زحل)، اورانوس، نپتون</td>
+</tr>
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-highest/40 transition-colors">
+<td class="p-space-sm font-bold text-on-surface">جنس و بافت اصلی</td>
+<td class="p-space-sm">سنگ، فلزات سیلیکاتی و آهن چگال</td>
+<td class="p-space-sm">هیدروژن، هلیوم، متان و آمونیاک منجمد</td>
+</tr>
+<tr class="hover:bg-surface-container-highest/40 transition-colors">
+<td class="p-space-sm font-bold text-on-surface">چگالی میانگین</td>
+<td class="p-space-sm text-primary font-label-mono-sm">بالا (حدود ۳.۹ تا ۵.۵ g/cm³)</td>
+<td class="p-space-sm text-secondary font-label-mono-sm">پایین (حدود ۰.۷ تا ۱.۶ g/cm³)</td>
+</tr>
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-highest/40 transition-colors">
+<td class="p-space-sm font-bold text-on-surface">تعداد قمر طبیعی</td>
+<td class="p-space-sm">بسیار کم (زمین: ۱، مریخ: ۲، عطارد و زهره: ۰)</td>
+<td class="p-space-sm">بسیار زیاد (ده‌ها قمر مانند گانیمد، تیتان و اروپا)</td>
+</tr>
+<tr class="hover:bg-surface-container-highest/40 transition-colors">
+<td class="p-space-sm font-bold text-on-surface">سامانه حلقه دور سیاره</td>
+<td class="p-space-sm">کاملاً فاقد حلقه</td>
+<td class="p-space-sm">همگی دارای سامانه حلقوی (زحل درخشان‌ترین)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="bg-surface-container-high/60 p-space-sm rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-tertiary font-body-sm text-body-sm">
+<span class="material-symbols-outlined">lightbulb</span>
+<span>آیا می‌دانستید؟ زحل با چگالی ۰.۶۹ گرم بر سانتی‌متر مکعب بر روی آب شناور می‌ماند!</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-outline">DENSITY &lt; 1.0</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Module 4: Rotation vs Revolution -->
+<article class="module-card bg-surface-container-low/90 backdrop-blur-md rounded-xl overflow-hidden shadow-lg transition-all" data-expanded="false">
+<button class="w-full p-space-lg flex items-center justify-between text-right cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors module-trigger" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-label-mono-lg text-label-mono-lg">
+                  04
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">حرکت وضعی و انتقالی سیارات</span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline hidden sm:inline">(Rotation vs Revolution)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">پیدایش شبانه‌روز، تقویم سالیانه، انحراف محور و پیدایش فصول</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-primary hidden md:inline">23.5° Tilt</span>
+<span class="material-symbols-outlined text-on-surface-variant transform transition-transform duration-300 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="module-content hidden p-space-lg bg-surface-container/40">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<div class="p-space-md bg-surface-container rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined">sync</span>
+<h3 class="font-headline-sm text-headline-sm">۱. حرکت وضعی (گردش به دور خود)</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    چرخش هر سیاره حول محور فرضی خودش حرکت وضعی نامیده می‌شود. این حرکت عامل پیدایش <strong>شبانه‌روز</strong> در سیارات است. دوره تناوب وضعی زمین ۲۳ ساعت و ۵۶ دقیقه (یک شبانه‌روز نجومی) است.
+                  </p>
+<div class="p-space-xs bg-surface-container-low rounded font-label-mono-sm text-label-mono-sm text-outline">
+                    جهت استاندارد: پادساعت‌گرد (مغرب به مشرق) — به استثنای زهره و اورانوس.
+                  </div>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined">orbit</span>
+<h3 class="font-headline-sm text-headline-sm">۲. حرکت انتقالی (گردش دور خورشید)</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    پیمایش مدار بیضوی سیاره به دور ستاره مادر، حرکت انتقالی است که طول <strong>سال سیاره‌ای</strong> را مشخص می‌کند. در زمین این مدت ۳۶۵.۲۵ روز است.
+                  </p>
+<div class="p-space-xs bg-surface-container-low rounded font-body-sm text-body-sm text-tertiary">
+<strong>علت فصول:</strong> شیب ۲۳.۵ درجه‌ای محور زمین همزمان با حرکت انتقالی موجب زاویه تابش متغیر خورشید و تشکیل ۴ فصل می‌شود.
+                  </div>
+</div>
+</div>
+</div>
+</article>
+<!-- Module 5: Kepler & Newton Gravity -->
+<article class="module-card bg-surface-container-low/90 backdrop-blur-md rounded-xl overflow-hidden shadow-lg transition-all" data-expanded="false">
+<button class="w-full p-space-lg flex items-center justify-between text-right cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors module-trigger" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-label-mono-lg text-label-mono-lg">
+                  05
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">قوانین مداری کپلر و گرانش نیوتون</span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline hidden sm:inline">(Kepler's Laws &amp; Newton Gravity)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">مدارهای بیضوی، مساحت‌های مساوی، رابطه فاصله تا خورشید و دوره تناوب</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-primary hidden md:inline">F = G·(m₁m₂)/r²</span>
+<span class="material-symbols-outlined text-on-surface-variant transform transition-transform duration-300 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="module-content hidden p-space-lg bg-surface-container/40">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-primary">قانون اول کپلر</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">مدارهای بیضوی</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    مدار گردش همه سیارات بیضی است که خورشید در یکی از کانون‌های آن قرار دارد، نه در مرکز دایره.
+                  </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">قانون دوم کپلر</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">سرعت متغیر مداری</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    خط رابط سیاره و خورشید در زمان‌های برابر، مساحت‌های برابری را جاروب می‌کند. در حضیض (نزدیک‌ترین نقطه) سرعت سیاره بیشترین است.
+                  </p>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary">قانون سوم کپلر</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">تناسب دوره و فاصله (T² ∝ a³)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                    مربع زمان گردش مداری سیاره متناسب با مکعب فاصله متوسط آن از خورشید است؛ لذا سیارات دورتر سال‌های طولانی‌تری دارند.
+                  </p>
+</div>
+</div>
+</div>
+</article>
+<!-- Module 6: Small Solar System Bodies -->
+<article class="module-card bg-surface-container-low/90 backdrop-blur-md rounded-xl overflow-hidden shadow-lg transition-all" data-expanded="false">
+<button class="w-full p-space-lg flex items-center justify-between text-right cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors module-trigger" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-label-mono-lg text-label-mono-lg">
+                  06
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">اجرام کوچک منظومه: سیارک‌ها، شهاب‌ها و دنباله‌دارها</span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline hidden sm:inline">(Small Bodies &amp; Comets)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تفاوت دقیق شهاب‌وار، شهاب، شهاب‌سنگ؛ کمربند کوئیپر و ابر اورت</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary hidden md:inline">Kuiper &amp; Oort</span>
+<span class="material-symbols-outlined text-on-surface-variant transform transition-transform duration-300 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="module-content hidden p-space-lg bg-surface-container/40">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">زنجیره مفهومی پرسوال امتحانات هماهنگ نهم:</h4>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="font-label-mono-sm text-label-mono-sm text-primary">۱. شهاب‌وار (Meteoroid)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">قطعه سنگ یا فلز سرگردان در فضای بین سیاره‌ای منظومه.</p>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">۲. شهاب (Meteor / تیر شهاب)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">خط نورانی در اثر اصطکاک و سوختن شهاب‌وار در جو زمین.</p>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary">۳. شهاب‌سنگ (Meteorite)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">باقیمانده سنگ فضایی که از جو گذشته و به سطح زمین برخورد می‌کند.</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+<strong>دنباله‌دارها (Comets):</strong> معروف به گلوله‌های برفی کثیف! ترکیبی از یخ آب، آمونیاک، متان و غبار که از کمربند کویپر یا ابر اورت سرچشمه می‌گیرند. دم دنباله‌دار به علت فشار باد خورشیدی همواره در جهت خلاف خورشید تشکیل می‌شود.
+                  </p>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-center">
+<div class="w-full h-48 rounded-xl overflow-hidden relative shadow-md">
+<img class="w-full h-full object-cover" data-alt="Astrophotography scene showing an icy comet nucleus with a brilliant dual ion and dust tail glowing cyan and turquoise against starry black cosmos, deep atmospheric lighting, educational science reference photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzQ2pxKw6g1-bDzP4Ak6ImzoMi1IuJxXebzpdrPhaVdp3x2IL1JhCOf2jjbkhjrDp1eRFERbYj94ql6pZLoc7TBH11p3Yn4EDwFhiTQ7V1D4XWBoLC9LRZSsii9jKtUSCP5Q3UQ-TM5qejClLihx2OTHcoplAfOQegeQI6HeGOmb_KORRDm82Sc5fMtO0bYgPgcr4KAdHnfQWvuEF6G-8lNqFlaOH3lIzJklD7-yQb8hrzxoheUSpz"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"></div>
+<span class="absolute bottom-2 right-2 font-label-mono-sm text-label-mono-sm text-primary">دنباله‌دار با دم دوگانه غبار و گاز</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- Module 7: Dwarf Planets & IAU Definition -->
+<article class="module-card bg-surface-container-low/90 backdrop-blur-md rounded-xl overflow-hidden shadow-lg transition-all" data-expanded="false">
+<button class="w-full p-space-lg flex items-center justify-between text-right cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors module-trigger" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-label-mono-lg text-label-mono-lg">
+                  07
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">سیارات کوتوله و شرایط سه‌گانه IAU</span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline hidden sm:inline">(Dwarf Planets &amp; Pluto Reclassification)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">چرا پلوتو دیگر سیاره اصلی نیست؟ معرفی سرس، پلوتو، اریس</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary hidden md:inline">IAU 2006</span>
+<span class="material-symbols-outlined text-on-surface-variant transform transition-transform duration-300 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="module-content hidden p-space-lg bg-surface-container/40">
+<div class="flex flex-col gap-space-md">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                  در سال ۲۰۰۶، اتحادیه بین‌المللی اخترشناسی (IAU) تعریف رسمی سیاره را تصویب کرد. برای اینکه جرمی «سیاره اصلی» محسوب شود باید هر ۳ شرط زیر را دارا باشد:
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-md bg-surface-container rounded-lg border-r-2 border-primary flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary">شرط اول</span>
+<p class="font-body-md text-body-md text-on-surface">باید در مداری مشخص دور خورشید بگردد (قمر جرم دیگر نباشد).</p>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg border-r-2 border-primary flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary">شرط دوم</span>
+<p class="font-body-md text-body-md text-on-surface">جرم کافی برای تعادل هیدرواستاتیکی (شکل کروی یا نزدیک به کروی) داشته باشد.</p>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg border-r-2 border-tertiary flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-tertiary font-bold">شرط سوم (رد صلاحیت پلوتو)</span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                      باید همسایگی مداری خود را از سایر اجرام بزرگ پاکسازی کرده باشد.
+                    </p>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-high/70 rounded-lg text-on-surface-variant font-body-sm text-body-sm">
+<strong class="text-on-surface">نکته علوم نهم:</strong> پلوتو چون مدارش با کمربند کوئیپر تداخل دارد شرط سوم را نداشت و از سال ۲۰۰۶ همراه با <strong>سرس (Ceres - بزرگ‌ترین جرم کمربند سیارک‌ها)</strong> و <strong>اریس (Eris)</strong> در رده «سیارات کوتوله» قرار گرفت.
+                </div>
+</div>
+</div>
+</article>
+<!-- Module 8: Habitable Zone (Goldilocks) -->
+<article class="module-card bg-surface-container-low/90 backdrop-blur-md rounded-xl overflow-hidden shadow-lg transition-all" data-expanded="false">
+<button class="w-full p-space-lg flex items-center justify-between text-right cursor-pointer bg-surface-container-low hover:bg-surface-container transition-colors module-trigger" type="button">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-label-mono-lg text-label-mono-lg">
+                  08
+                </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">کمربند حیات و شرایط شکل‌گیری زیست</span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline hidden sm:inline">(Habitable / Goldilocks Zone)</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فاصله زیست‌پذیر، آب مایع، اتمسفر محافظ و میدان مغناطیسی سپر زمین</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-mono-sm text-label-mono-sm text-primary hidden md:inline">0.95 - 1.4 AU</span>
+<span class="material-symbols-outlined text-on-surface-variant transform transition-transform duration-300 chevron-icon">expand_more</span>
+</div>
+</button>
+<div class="module-content hidden p-space-lg bg-surface-container/40">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-md">
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+<strong>کمربند حیات (گُلدی‌لاکس):</strong> محدوده‌ای در اطراف یک ستاره است که دمای سطح سیاره نه آن‌قدر داغ است که آب بخار شود و نه آن‌قدر منجمد که آب به یخ تبدیل گردد. وجود آب به فرم مایع ستون فقرات حیات بر پایه کربن است.
+                  </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary">water_drop</span>
+<div>
+<strong class="text-on-surface font-headline-sm text-headline-sm block">آب به حالت مایع</strong>
+<span class="font-body-sm text-body-sm text-on-surface-variant">محیط واکنش‌های بیوشیمیایی سلولی.</span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary">shield</span>
+<div>
+<strong class="text-on-surface font-headline-sm text-headline-sm block">اتمسفر و لایه ازن</strong>
+<span class="font-body-sm text-body-sm text-on-surface-variant">فیلتر پرتوهای فرابنفش خطرناک خورشید.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col items-center">
+<div class="w-full bg-surface-container-high p-space-md rounded-xl flex flex-col items-center text-center">
+<div class="w-full h-8 bg-gradient-to-r from-error/40 via-primary-container/40 to-secondary/40 rounded-full flex items-center justify-between px-space-sm my-space-sm relative">
+<span class="text-[10px] font-label-mono-sm text-on-surface">عطارد/زهره (بسیار گرم)</span>
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-xs shadow-md">
+                        🌍
+                      </div>
+<span class="text-[10px] font-label-mono-sm text-on-surface">مریخ/مشتری (بسیار سرد)</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">زمین دقیقاً در هسته منطقه طلایی قرار دارد</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Interactive Flashcards Pedagogical Engine -->
+<section class="w-full px-gutter py-space-xl bg-surface-container-lowest/70 backdrop-blur-md" id="flashcards-section">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<div class="font-label-mono-sm text-label-mono-sm text-primary mb-space-xs">SPACED REPETITION // FLASHCARDS</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">فلش‌کارت‌های مرور سریع شب آزمون</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">روی هر کارت کلیک کنید تا پاسخ علمی و نکات کلیدی پایه نهم را مشاهده نمایید.</p>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-mono-sm text-label-mono-sm bg-surface-container px-space-md py-space-xs rounded-full">
+<span id="flashcard-counter">کارت ۱ از ۴</span>
+</div>
+</div>
+<!-- Flashcard Viewport -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="flashcard bg-surface-container-low p-space-lg rounded-xl shadow-lg cursor-pointer hover:bg-surface-container transition-all flex flex-col justify-between min-h-[220px] relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-primary">QUESTION // 01</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">flip</span>
+</div>
+<div class="flashcard-front my-auto">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">چرا شهاب‌سنگ‌ها پس از سقوط داغ و گداخته‌اند؟</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs block">(برای دیدن پاسخ کلیک کنید)</span>
+</div>
+<div class="flashcard-back hidden my-auto">
+<p class="font-body-md text-body-md text-primary leading-relaxed">
+                اصطکاک شدید با گازهای متراکم اتمسفر زمین در سرعت‌های مافوق‌صوت موجب گرمایش آدیاباتیک و داغ شدن سطح سنگ می‌شود.
+              </p>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary w-1/4 h-full"></div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flashcard bg-surface-container-low p-space-lg rounded-xl shadow-lg cursor-pointer hover:bg-surface-container transition-all flex flex-col justify-between min-h-[220px] relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary">QUESTION // 02</span>
+<span class="material-symbols-outlined text-outline group-hover:text-secondary transition-colors">flip</span>
+</div>
+<div class="flashcard-front my-auto">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">کدام سیاره منظومه شمسی کوتاه‌ترین سال را دارد؟</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs block">(برای دیدن پاسخ کلیک کنید)</span>
+</div>
+<div class="flashcard-back hidden my-auto">
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+                سیاره <strong>عطارد (تیر)</strong> به دلیل نزدیکی به خورشید با دوره تناوب مداری فقط ۸۸ روز زمینی سریع‌ترین سال را دارد.
+              </p>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-secondary w-2/4 h-full"></div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flashcard bg-surface-container-low p-space-lg rounded-xl shadow-lg cursor-pointer hover:bg-surface-container transition-all flex flex-col justify-between min-h-[220px] relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary">QUESTION // 03</span>
+<span class="material-symbols-outlined text-outline group-hover:text-tertiary transition-colors">flip</span>
+</div>
+<div class="flashcard-front my-auto">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">سوخت اصلی واکنش‌های خورشیدی چیست و به چه عنصری بدل می‌شود؟</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs block">(برای دیدن پاسخ کلیک کنید)</span>
+</div>
+<div class="flashcard-back hidden my-auto">
+<p class="font-body-md text-body-md text-tertiary leading-relaxed">
+                گاز <strong>هیدروژن</strong> در واکنش گداخت گرماهسته‌ای پیوند خورده و به <strong>هلیوم</strong> مبدل گشته و پرتوهای گاما آزاد می‌نماید.
+              </p>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-tertiary w-3/4 h-full"></div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flashcard bg-surface-container-low p-space-lg rounded-xl shadow-lg cursor-pointer hover:bg-surface-container transition-all flex flex-col justify-between min-h-[220px] relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-container">QUESTION // 04</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary-container transition-colors">flip</span>
+</div>
+<div class="flashcard-front my-auto">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">جهت دم گاز و گردوغبار دنباله‌دار چگونه تعیین می‌شود؟</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs block">(برای دیدن پاسخ کلیک کنید)</span>
+</div>
+<div class="flashcard-back hidden my-auto">
+<p class="font-body-md text-body-md text-primary-container leading-relaxed">
+                فشار تابشی و بادهای خورشیدی دم را همواره در جهتی <strong>دور از خورشید</strong> می‌رانند، صرف‌نظر از جهت حرکت خود دنباله‌دار.
+              </p>
+</div>
+<div class="w-full bg-surface-container-highest h-1 rounded-full overflow-hidden">
+<div class="bg-primary-container w-full h-full"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Revision Checklist & Exam Strategy Module -->
+<section class="w-full px-gutter py-space-xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Checklist Column -->
+<div class="lg:col-span-8 bg-surface-container-low p-space-xl rounded-xl shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">SELF-ASSESSMENT CHECKLIST</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">چک‌لیست تسلط بر مفاهیم علوم تجربی نهم</h3>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-secondary bg-surface-container-highest px-space-sm py-space-xs rounded" id="checklist-progress-text">0 / 6 تکمیل شده</span>
+</div>
+<div class="flex flex-col gap-space-sm" id="checklist-items">
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer select-none">
+<input class="w-5 h-5 rounded accent-primary-container checklist-checkbox" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">آشنایی با نظریه پیدایش منظومه شمسی از سحابی و عمر ۴.۶ میلیارد ساله</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer select-none">
+<input class="w-5 h-5 rounded accent-primary-container checklist-checkbox" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">یادگیری واکنش همجوشی هیدروژن به هلیوم و علت تابش نور خورشید</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer select-none">
+<input class="w-5 h-5 rounded accent-primary-container checklist-checkbox" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">توانایی ترسیم جدول مقایسه سیارات درونی و بیرونی (چگالی، جنس، اقمار)</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer select-none">
+<input class="w-5 h-5 rounded accent-primary-container checklist-checkbox" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">تشخیص تفاوت شهاب‌وار، شهاب و شهاب‌سنگ و کاربرد سنگ‌های آسمانی</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer select-none">
+<input class="w-5 h-5 rounded accent-primary-container checklist-checkbox" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">دلایل خروج پلوتو از سیارات اصلی بر مبنای قوانین سه‌گانه انجمن نجوم</span>
+</label>
+<label class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer select-none">
+<input class="w-5 h-5 rounded accent-primary-container checklist-checkbox" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">مفهوم کمربند حیات و شرایط پیدایش آب مایع در سامانه شمسی</span>
+</label>
+</div>
+<!-- Master Progress Bar -->
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-primary-container h-full transition-all duration-300" id="checklist-progress-bar" style="width: 0%;"></div>
+</div>
+</div>
+<!-- Exam Tips Card -->
+<div class="lg:col-span-4 bg-surface-container-high p-space-lg rounded-xl shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-tertiary">
+<span class="material-symbols-outlined">grade</span>
+<h4 class="font-headline-sm text-headline-sm">استراتژی پاسخ به سوالات تیزهوشان</h4>
+</div>
+<div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant">
+<div class="p-space-sm bg-surface-container rounded-lg">
+<strong class="text-on-surface block mb-1">سرعت مداری در حضیض و اوج:</strong>
+              در امتحانات به یاد داشته باشید طبق قانون دوم کپلر، هرگاه سیاره در نزدیک‌ترین نقطه مدار بیضوی به خورشید قرار می‌گیرد بیشترین سرعت زاویه‌ای را داراست.
+            </div>
+<div class="p-space-sm bg-surface-container rounded-lg">
+<strong class="text-on-surface block mb-1">انحراف مداری زهره:</strong>
+              ناهید (زهره) برخلاف اکثر سیارات منظومه، جهت حرکت وضعی ساعتگرد (معکوس) دارد و دوره چرخش به دور خود آن از گردش به دور خورشید طولانی‌تر است!
+            </div>
+</div>
+<a class="w-full py-space-sm px-space-md bg-secondary text-on-secondary font-headline-sm text-headline-sm rounded-lg text-center hover:brightness-110 transition-all flex items-center justify-center gap-space-xs" href="#">
+<span class="material-symbols-outlined">download</span>
+<span>دانلود نمونه سوالات هماهنگ استانی</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<!-- Client-side Interactive Logic -->
+<script>
+    // Accordion Toggle Logic
+    document.querySelectorAll('.module-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        const card = trigger.closest('.module-card');
+        const content = card.querySelector('.module-content');
+        const chevron = trigger.querySelector('.chevron-icon');
+        const isExpanded = card.getAttribute('data-expanded') === 'true';
+
+        if (isExpanded) {
+          content.classList.add('hidden');
+          chevron.classList.remove('rotate-180');
+          card.setAttribute('data-expanded', 'false');
+        } else {
+          content.classList.remove('hidden');
+          chevron.classList.add('rotate-180');
+          card.setAttribute('data-expanded', 'true');
+        }
+      });
+    });
+
+    // Expand All / Collapse All Handlers
+    const expandAllBtn = document.getElementById('expandAllBtn');
+    const collapseAllBtn = document.getElementById('collapseAllBtn');
+
+    if (expandAllBtn && collapseAllBtn) {
+      expandAllBtn.addEventListener('click', () => {
+        document.querySelectorAll('.module-card').forEach(card => {
+          card.querySelector('.module-content').classList.remove('hidden');
+          card.querySelector('.chevron-icon').classList.add('rotate-180');
+          card.setAttribute('data-expanded', 'true');
+        });
+      });
+
+      collapseAllBtn.addEventListener('click', () => {
+        document.querySelectorAll('.module-card').forEach(card => {
+          card.querySelector('.module-content').classList.add('hidden');
+          card.querySelector('.chevron-icon').classList.remove('rotate-180');
+          card.setAttribute('data-expanded', 'false');
+        });
+      });
+    }
+
+    // Spaced Repetition Flashcards Flip Logic
+    document.querySelectorAll('.flashcard').forEach(card => {
+      card.addEventListener('click', () => {
+        const front = card.querySelector('.flashcard-front');
+        const back = card.querySelector('.flashcard-back');
+        if (front.classList.contains('hidden')) {
+          front.classList.remove('hidden');
+          back.classList.add('hidden');
+        } else {
+          front.classList.add('hidden');
+          back.classList.remove('hidden');
+        }
+      });
+    });
+
+    // Checklist Progress Calculator
+    const checkboxes = document.querySelectorAll('.checklist-checkbox');
+    const progressBar = document.getElementById('checklist-progress-bar');
+    const progressText = document.getElementById('checklist-progress-text');
+
+    function updateProgress() {
+      const total = checkboxes.length;
+      let checked = 0;
+      checkboxes.forEach(box => {
+        if (box.checked) checked++;
+      });
+      const percent = Math.round((checked / total) * 100);
+      if (progressBar) progressBar.style.width = percent + '%';
+      if (progressText) progressText.innerText = checked + ' / ' + total + ' تکمیل شده (' + percent + '%)';
+    }
+
+    checkboxes.forEach(box => {
+      box.addEventListener('change', updateProgress);
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest/90 backdrop-blur-xl py-space-lg shadow-[0_-1px_12px_rgba(0,0,0,0.4)]"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md text-center md:text-right"><div class="flex items-center gap-space-sm"><img alt="Space Explorer Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VDQ7FIUi5LbWiF9wkUl-DzldX_wUVb2oOP0W5T1wryF7kk0ufenr1Y8mvwiINk2WLILNFuhkzvtQ71biBRhRm3gUO2DxFzzWlIwz69OQvfJJVBq_fovPBJACNrlfteI6vkoGldtH7EQe8-o1mJ5cTgbMq93F53fqFOoHZMEcbYw3HA6eRJIpX4Im6LihxRQJs9OAoLenWNd8OAd-R9weoVgNtIMcegB0yAzwBDwaLNPAJQ784aGJyn1K0"/><span class="font-headline-sm text-headline-sm text-on-surface">سامانه هوشمند آموزش نجوم و اخترفیزیک پایه نهم</span></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-mono-sm text-label-mono-sm"><span>RAYMARCHING ENGINE 3.4</span><span>•</span><span>ASTRO-DYNAMIC CODES v2.1</span><span>•</span><span class="text-primary">FA/EN DUAL STREAM</span></div></div></footer></body></html>

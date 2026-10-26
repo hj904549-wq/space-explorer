@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&amp;family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;family=Vazirmatn:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"inverse-primary":"#00677f","secondary":"#b2c5ff","on-secondary-container":"#99b3ff","primary":"#c4eeff","surface-bright":"#353945","on-error-container":"#ffdad6","surface-container-low":"#181b26","on-background":"#dfe2f1","on-surface-variant":"#bdc8ce","on-error":"#690005","primary-fixed":"#b7eaff","on-tertiary-fixed":"#281800","secondary-fixed-dim":"#b2c5ff","outline":"#879398","on-primary-container":"#005d74","inverse-surface":"#dfe2f1","on-primary":"#003543","surface-variant":"#313440","error":"#ffb4ab","on-secondary-fixed-variant":"#1d4292","surface-container-lowest":"#0a0e18","tertiary-fixed":"#ffddb0","on-tertiary-container":"#744e01","secondary-container":"#1d4292","surface-container-high":"#262a35","outline-variant":"#3d484d","error-container":"#93000a","surface-dim":"#0f131e","surface-container-highest":"#313440","surface-container":"#1c1f2a","on-surface":"#dfe2f1","tertiary":"#ffe3bf","on-tertiary-fixed-variant":"#614000","tertiary-container":"#f8c270","secondary-fixed":"#dae2ff","inverse-on-surface":"#2c303c","surface":"#0f131e","on-secondary-fixed":"#001848","surface-tint":"#60d4fa","on-primary-fixed-variant":"#004e60","on-primary-fixed":"#001f28","on-secondary":"#002b74","primary-container":"#65d9ff","primary-fixed-dim":"#60d4fa","tertiary-fixed-dim":"#f3bd6b","background":"#0f131e","on-tertiary":"#442c00"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin":"2.5rem","gutter-mobile":"0.75rem","space-xl":"2.5rem","space-xs":"0.25rem","space-md":"1rem","gutter":"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-mobile":"1rem"},fontFamily:{"label-mono-sm":["Space Mono"],"body-md":["Sora"],"headline-lg-mobile":["Space Grotesk"],"label-mono-lg":["Space Mono"],"body-sm":["Sora"],"display-hero":["Space Grotesk"],"display-hero-mobile":["Space Grotesk"],"headline-lg":["Space Grotesk"],"headline-md":["Space Grotesk"],"body-lg":["Sora"],"headline-sm":["Space Grotesk"]},fontSize:{"label-mono-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-mono-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.05em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"68px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface min-h-screen relative overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container"><div class="fixed inset-0 pointer-events-none z-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(101,217,255,0.08),rgba(15,19,30,0))]"></div><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="Space Explorer Emblem" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VDQ7FIUi5LbWiF9wkUl-DzldX_wUVb2oOP0W5T1wryF7kk0ufenr1Y8mvwiINk2WLILNFuhkzvtQ71biBRhRm3gUO2DxFzzWlIwz69OQvfJJVBq_fovPBJACNrlfteI6vkoGldtH7EQe8-o1mJ5cTgbMq93F53fqFOoHZMEcbYw3HA6eRJIpX4Im6LihxRQJs9OAoLenWNd8OAd-R9weoVgNtIMcegB0yAzwBDwaLNPAJQ784aGJyn1K0"/><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">کاوشگر فضا</span><span class="text-outline font-label-mono-sm text-label-mono-sm">/</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Space Explorer</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">سفر به اعماق منظومه شمسی • Grade 9 Astronomy</span></div></div><nav class="hidden xl:flex items-center gap-space-sm bg-surface-container-low/60 p-space-xs rounded-xl backdrop-blur-md" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm rounded-lg"><a aria-current="page" class="px-space-md py-space-xs transition-colors bg-primary-container text-on-primary-container font-headline-sm rounded-lg" data-path="explore" href="#">کاوش سیارات (Planets)</a><a class="px-space-md py-space-xs text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="compare" href="#">بررسی و مقایسه (Compare)</a><a class="px-space-md py-space-xs text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="curriculum" href="#">آموزش پایه ۹ (Learn)</a><a class="px-space-md py-space-xs text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="quiz" href="#">آزمون کیهانی (Quiz)</a><a class="px-space-md py-space-xs text-on-surface-variant font-body-md text-body-md hover:bg-surface-container-high hover:text-on-surface rounded-lg transition-colors" data-path="settings" href="#">تنظیمات (Settings)</a></nav><div class="flex items-center gap-space-sm"><div class="flex items-center bg-surface-container-high/60 rounded-lg p-space-xs backdrop-blur-md"><button class="px-space-sm py-space-xs font-label-mono-sm text-label-mono-sm rounded bg-primary-container text-on-primary-container" type="button">FA</button><button class="px-space-sm py-space-xs font-label-mono-sm text-label-mono-sm rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors" type="button">EN</button></div><button class="w-10 h-10 rounded-lg bg-surface-container-high/60 hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors backdrop-blur-md" title="Ambient Audio Telemetry" type="button"><span class="material-symbols-outlined text-base">graphic_eq</span></button><button class="w-10 h-10 rounded-lg bg-surface-container-high/60 hover:bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors backdrop-blur-md" title="Orbital Trajectories HUD" type="button"><span class="material-symbols-outlined text-base">orbit</span></button><div class="h-6 w-px bg-outline-variant mx-space-xs hidden sm:block"></div><div class="flex items-center gap-space-xs bg-surface-container-high/50 p-space-xs rounded-full backdrop-blur-md"><div class="text-left rtl:text-right hidden sm:block px-space-xs"><p class="font-label-mono-sm text-label-mono-sm text-primary">COMMANDER</p><p class="font-body-sm text-body-sm text-on-surface leading-none">متخصص کاوش</p></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU1XWXcWTsW8UM1D7diUif1kyTi-dSLUXatPkUYZ6fWNugdz_3um3GRsDGxiXlTGFdd3VSwdMu-ZOoIhsWEEecjg0D62UIc_CoPBcTBjA96dEkuHWBvWuSt-X1mdCgNMx4uM1IdN924RGtiF7PSsqiZK-NxEggIRlKm4PWGCoH2YYt6KuAsoSFPsn9QSKRzEJTewrd1dK-_k2kviFS28IpGGc3VilBtKu5AvvJvqaFjiEP1wo3xBnI"/></div></div></div></header><aside class="fixed right-0 top-20 bottom-16 w-64 bg-surface-container-lowest/70 backdrop-blur-2xl z-40 hidden lg:flex flex-col justify-between py-space-md shadow-[0_4px_24px_rgba(0,0,0,0.5)]"><div class="px-space-md pb-space-xs flex items-center justify-between"><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant tracking-wider uppercase">ایستگاه‌های مداری</span><span class="font-label-mono-sm text-label-mono-sm text-tertiary-container">SOLAR RAIL</span></div><nav class="flex-1 overflow-y-auto px-space-xs space-y-space-xs" data-active-classes="bg-surface-container-highest text-primary font-bold shadow-[0_0_20px_rgba(101,217,255,0.15)]"><a class="group flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="station-sun" href="#"><div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-tertiary-container shadow-[0_0_12px_rgba(248,194,112,0.6)]"></span><span class="font-body-md text-body-md">خورشید</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant/60">Sun</span></div><span class="font-label-mono-sm text-label-mono-sm text-outline group-hover:text-tertiary">0.00 AU</span></a><a class="group flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="station-mercury" href="#"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-outline"></span><span class="font-body-md text-body-md">تیر</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant/60">Mercury</span></div><span class="font-label-mono-sm text-label-mono-sm text-outline group-hover:text-primary">0.39 AU</span></a><a class="group flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="station-venus" href="#"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span><span class="font-body-md text-body-md">ناهید</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant/60">Venus</span></div><span class="font-label-mono-sm text-label-mono-sm text-outline group-hover:text-primary">0.72 AU</span></a><a class="group flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="station-earth" href="#"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_rgba(101,217,255,0.8)]"></span><span class="font-body-md text-body-md text-primary font-semibold">زمین</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant/60">Earth</span></div><span class="font-label-mono-sm text-label-mono-sm text-primary">1.00 AU</span></a><a class="group flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="station-mars" href="#"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-error"></span><span class="font-body-md text-body-md">بهرام</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant/60">Mars</span></div><span class="font-label-mono-sm text-label-mono-sm text-outline group-hover:text-primary">1.52 AU</span></a><a class="group flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="station-jupiter" href="#"><div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></span><span class="font-body-md text-body-md">برجیس</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant/60">Jupiter</span></div><span class="font-label-mono-sm text-label-mono-sm text-outline group-hover:text-primary">5.20 AU</span></a><a class="group flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="station-saturn" href="#"><div class="flex items-center gap-space-xs"><span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed"></span><span class="font-body-md text-body-md">کیوان</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant/60">Saturn</span></div><span class="font-label-mono-sm text-label-mono-sm text-outline group-hover:text-primary">9.58 AU</span></a><a class="group flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="station-uranus" href="#"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-fixed"></span><span class="font-body-md text-body-md">اورانوس</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant/60">Uranus</span></div><span class="font-label-mono-sm text-label-mono-sm text-outline group-hover:text-primary">19.22 AU</span></a><a class="group flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="station-neptune" href="#"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="font-body-md text-body-md">نپتون</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant/60">Neptune</span></div><span class="font-label-mono-sm text-label-mono-sm text-outline group-hover:text-primary">30.05 AU</span></a></nav><div class="px-space-md pt-space-xs bg-surface-container-low/40 rounded-lg mx-space-xs p-space-xs"><div class="flex items-center justify-between"><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">TELEPORT HUD</span><span class="font-label-mono-sm text-label-mono-sm text-primary">SYNCHRONIZED</span></div><p class="font-body-sm text-body-sm text-outline mt-1 leading-relaxed">انتخاب سیاره جهت تغییر موقعیت دوربین سه بعدی</p></div></aside><div class="lg:pr-64"><main class="relative w-full pt-20 pb-16 min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Optical Flare Layer -->
+<div class="relative w-full overflow-hidden">
+<!-- HERO SECTION: کاوش منظومه شمسی -->
+<section class="relative w-full px-gutter pt-space-lg pb-space-xl overflow-hidden flex flex-col justify-between min-h-[901px]">
+<!-- Deep Space Photon Backdrop -->
+<div class="absolute inset-0 pointer-events-none -z-10 bg-[radial-gradient(circle_at_70%_20%,rgba(101,217,255,0.14),transparent_50%),radial-gradient(circle_at_20%_80%,rgba(248,194,112,0.08),transparent_40%)]"></div>
+<!-- Top Telemetry Stream HUD -->
+<div class="w-full flex flex-wrap items-center justify-between gap-space-sm mb-space-lg">
+<div class="flex items-center gap-space-xs bg-surface-container-high/60 backdrop-blur-md px-space-md py-space-xs rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-primary tracking-widest uppercase">DEEP_SPACE_TELEMETRY // GRADE 9 CURRICULUM</span>
+<span class="text-outline-variant font-label-mono-sm">/</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">واحد نجوم پایه نهم</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-low/80 backdrop-blur-md px-space-sm py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-primary text-sm">visibility</span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface">RADIAL DOCK: ACTIVE</span>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low/80 backdrop-blur-md px-space-sm py-space-xs rounded-lg">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary-container">EPOCH J2000.0</span>
+</div>
+</div>
+</div>
+<!-- Hero Main Content & Splendor Canvas Graphic -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-center my-auto">
+<!-- Text & Action Callout -->
+<div class="xl:col-span-7 flex flex-col gap-space-md text-right">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-sm py-0.5 rounded bg-surface-container-highest text-primary font-label-mono-sm text-label-mono-sm uppercase">SOLAR_SYSTEM_CORE_01</span>
+<span class="text-tertiary-container font-label-mono-sm text-label-mono-sm">سفر مستند به کرانه‌های کیهان</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
+            کاوش منظومه <span class="bg-gradient-to-l from-primary via-primary-container to-secondary text-transparent bg-clip-text">خورشیدی</span>
+<span class="block font-headline-sm text-headline-sm text-on-surface-variant mt-space-xs font-normal">Explore the Solar System</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            سفری شگفت‌انگیز در دل همسایگی کیهانی ما. جهان‌ها، نیروها و رازهایی که جایگاه ما را در جهان هستی شکل داده‌اند کشف کنید. از تاج‌های گدازان خورشید تا سردترین بادهای منجمد نپتون، شگفتی‌های فیزیک نجومی را با سنجش‌گرهای علمی لمس کنید.
+          </p>
+<!-- Interactive Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-sm">
+<a class="group flex items-center gap-space-sm px-space-lg py-space-md rounded-xl bg-primary-container text-on-primary-container font-headline-sm text-headline-sm transition-all duration-300 hover:scale-105 hover:shadow-[0_0_24px_rgba(101,217,255,0.45)]" href="#solar-journey">
+<span>آغاز پیمایش کیهانی</span>
+<span class="material-symbols-outlined transition-transform duration-300 group-hover:-translate-x-1">rocket_launch</span>
+</a>
+<a class="flex items-center gap-space-sm px-space-lg py-space-md rounded-xl bg-surface-container-high/80 text-on-surface hover:text-primary hover:bg-surface-container-highest backdrop-blur-md font-body-md text-body-md transition-all" href="#planets-dossier">
+<span class="material-symbols-outlined text-secondary">explore</span>
+<span>مشاهده پرونده تخصصی سیارات</span>
+</a>
+</div>
+<!-- Secondary Micro Telemetry -->
+<div class="flex items-center gap-space-md pt-space-xs text-outline font-label-mono-sm text-label-mono-sm">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> شبیه‌ساز پایگاه دانش نجوم
+            </span>
+<span>•</span>
+<span>طراحی منطبق بر سرفصل علوم تجربی نهم</span>
+</div>
+</div>
+<!-- Visual Hero Artifact: The Sun & System Orbits Graphic -->
+<div class="xl:col-span-5 relative flex items-center justify-center py-space-md">
+<div class="relative w-80 h-80 sm:w-96 sm:h-96 rounded-full flex items-center justify-center">
+<!-- Orbital Waves -->
+<div class="absolute inset-0 rounded-full border border-dashed border-primary/20 animate-[spin_60s_linear_infinite]"></div>
+<div class="absolute inset-4 rounded-full border border-primary/10"></div>
+<div class="absolute -inset-8 rounded-full border border-outline-variant/30"></div>
+<div class="absolute -inset-16 rounded-full border border-dotted border-secondary/10"></div>
+<!-- Central Sun Star Core -->
+<div class="relative w-56 h-56 rounded-full bg-gradient-to-br from-tertiary via-tertiary-container to-amber-700 shadow-[0_0_80px_rgba(248,194,112,0.55)] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.7),transparent_60%)]"></div>
+<div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-40" data-alt="Hyper-detailed macro view of solar flares, magnetic coronal loops, boiling plasma convection cells, in radiant amber, deep gold and solar white, cinematic sci-fi telescope astrophotography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDg3ryJc2iPgicjT_hsVtK412zZvGj59tPCFRaWzLsMJ7CDr35CD1le-jPcN7M-0-rqy8Qg7jPyCX7yPa6V0N5bBFnInNx8znJZLnye67aYn4KI4V9_otQrwJpqb34ZSY1Bc78DclWOPFjxPA9nJIDZgsFF5WiB5xbf73ntiziEnbCZgvNzwKP2PsVvXXqONpYXK5LjCWeUZGkN2lLl2qUXwJjWJtLiH4MMqR7EJdV3fLe46KFoPHRz')"></div>
+<!-- Sun Micro Info HUD inside -->
+<div class="relative text-center p-space-sm z-10 flex flex-col items-center">
+<span class="font-label-mono-sm text-label-mono-sm text-on-tertiary tracking-widest">SOLAR RADIANCE</span>
+<span class="font-headline-md text-headline-md text-on-tertiary font-bold tracking-tight">۱۵,۰۰۰,۰۰۰°C</span>
+<span class="font-body-sm text-body-sm text-on-tertiary/90">هسته گدازان خورشید</span>
+</div>
+</div>
+<!-- Floating Orbital Bodies (Graphic representations) -->
+<div class="absolute top-2 left-6 bg-surface-container-highest/90 p-space-xs rounded-xl backdrop-blur-md shadow-lg flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary-container shadow-[0_0_8px_rgba(101,217,255,0.8)]"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface">زمین : 1.0 AU</span>
+</div>
+<div class="absolute bottom-6 right-2 bg-surface-container-highest/90 p-space-xs rounded-xl backdrop-blur-md shadow-lg flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-error"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface">بهرام : 1.52 AU</span>
+</div>
+<div class="absolute bottom-0 left-12 bg-surface-container-highest/90 p-space-xs rounded-xl backdrop-blur-md shadow-lg flex items-center gap-space-xs">
+<span class="w-4 h-4 rounded-full bg-secondary-fixed-dim"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface">مشتری : 5.2 AU</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Bottom Quantitative Metric Rail (Key Astronomical Telemetry) -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-xl">
+<div class="bg-surface-container-low/70 backdrop-blur-xl p-space-md rounded-xl flex flex-col gap-space-xs relative overflow-hidden group hover:bg-surface-container-high/60 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase">PLANETS_COUNT</span>
+<span class="material-symbols-outlined text-primary text-base">public</span>
+</div>
+<span class="font-display-hero text-headline-lg text-on-surface tracking-tight">۸</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">سیاره اصلی منظومه</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">۴ سنگی درونی + ۴ غول گازی و یخی</span>
+</div>
+<div class="bg-surface-container-low/70 backdrop-blur-xl p-space-md rounded-xl flex flex-col gap-space-xs relative overflow-hidden group hover:bg-surface-container-high/60 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary-container uppercase">SOLAR_HEART</span>
+<span class="material-symbols-outlined text-tertiary-container text-base">wb_sunny</span>
+</div>
+<span class="font-display-hero text-headline-lg text-tertiary tracking-tight">۱</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">ستاره مرکزی (خورشید)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">۹۹.۸۶٪ از کل جرم منظومه خورشیدی</span>
+</div>
+<div class="bg-surface-container-low/70 backdrop-blur-xl p-space-md rounded-xl flex flex-col gap-space-xs relative overflow-hidden group hover:bg-surface-container-high/60 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">NATURAL_SATELLITES</span>
+<span class="material-symbols-outlined text-secondary text-base">mode_night</span>
+</div>
+<span class="font-display-hero text-headline-lg text-secondary tracking-tight">+۲۰۰</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">قمر طبیعی ثبت شده</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">میزبان جهان‌های فعال اقیانوسی و یخ</span>
+</div>
+<div class="bg-surface-container-low/70 backdrop-blur-xl p-space-md rounded-xl flex flex-col gap-space-xs relative overflow-hidden group hover:bg-surface-container-high/60 transition-all">
+<div class="flex items-center justify-between">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-fixed uppercase">AGE_SPECTRUM</span>
+<span class="material-symbols-outlined text-primary-fixed text-base">history_toggle_off</span>
+</div>
+<span class="font-display-hero text-headline-lg text-primary-fixed tracking-tight">۴.۶ B</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">میلیارد سال قدمت</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">تولد از سحابی گاز و غبار کهن</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: THE SCIENTIFIC EXPEDITION / THE COMPLETE ASTRONOMICAL CATALOGUE -->
+<section class="relative w-full px-gutter py-space-xl flex flex-col gap-space-xl" id="solar-journey">
+<!-- Section Title & Telemetry Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-3 h-1 bg-primary rounded-full"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase">ORBITAL_SEQUENCE // ASTRO_JOURNEY</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">پیمایش گام‌به‌گام سیارات منظومه خورشیدی</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">ترتیب دقیق فاصله از ستاره مادر به همراه تحلیل فیزیکی، جوی و مداری مطابق با علوم نهم</p>
+</div>
+<!-- Filter Pill Navigation -->
+<div class="flex items-center gap-space-xs bg-surface-container-low/80 backdrop-blur-md p-space-xs rounded-xl overflow-x-auto">
+<button class="px-space-md py-space-xs rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm text-sm" type="button">همه اجرام</button>
+<button class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm transition-colors" type="button">سیارات درونی (سنگی)</button>
+<button class="px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high font-body-sm text-body-sm transition-colors" type="button">سیارات بیرونی (گازی و یخی)</button>
+</div>
+</div>
+<!-- PLANET CARDS STACK: 9 Complete Bodies (Sun + 8 Planets) -->
+<div class="flex flex-col gap-space-xl">
+<!-- 0. خورشید (The Sun) -->
+<div class="bg-surface-container/60 backdrop-blur-2xl rounded-2xl p-space-lg relative overflow-hidden flex flex-col lg:flex-row items-center gap-space-xl group shadow-2xl" id="body-sun">
+<div class="w-full lg:w-5/12 h-72 sm:h-80 rounded-xl overflow-hidden relative shadow-[0_0_50px_rgba(248,194,112,0.25)]">
+<img class="w-full h-full object-cover" data-alt="Blistering cinematic telescope view of the Sun coronal mass ejections, hyper-realistic turbulent solar flares, blazing gold and orange plasma surface dynamics, scientifically accurate astrophotography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwlj0DGuoFuL64eYjL_a8Ill5MIZOu2DuiNJdrYf9DT7jQo56QsmCwDw0JLU9OmcikEXWVqiPubM3GNiRI1GCSfhWe_UNAmuwNHey4gM1oCr0jQhetf1ADOkkxXreYFdKcoV2WVZk5PxOysA4ICYS1jU4t1AsbYodTtrpp1NRiY-oeq3np5xffGbGLNMh9Kc2gS6X6f3CF1qFD2uri89zjl2b1lwEFw04qfsBpE8iBsL8-RygP6ecP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md right-space-md flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary-container uppercase">STELLAR_SPECTRAL_TYPE: G2V</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">خورشید / Sun</span>
+</div>
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono-sm text-label-mono-sm text-tertiary">
+              مرکز ثقل گرانشی
+            </div>
+</div>
+<div class="w-full lg:w-7/12 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase">STATION #00 • STELLAR DOMAIN</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">خورشید (ستاره مادر)</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-tertiary-container/20 text-tertiary-container font-label-mono-sm text-label-mono-sm font-bold">0.00 AU</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              ستاره میزبان و قلب تپنده منظومه ما که بیش از ۹۹.۸۶ درصد از کل ماده موجود در کل سامانه خورشیدی را درون گرانش عظیم خود جا داده است. این ستاره از هیدروژن و هلیوم ساخته شده و به واسطه همجوشی هسته‌ای پیوسته، منبع اصلی حیات و نور سیارات است.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">دمای هسته</span>
+<span class="font-label-mono-lg text-label-mono-lg text-tertiary">۱۵,۰۰۰,۰۰۰ °C</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">دمای سطح</span>
+<span class="font-label-mono-lg text-label-mono-lg text-tertiary">۵,۵۰۰ °C</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">سهم از کل جرم</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary">۹۹.۸۶ %</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">فاصله تا زمین</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۱۴۹.۶M km</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary">flare</span>
+                تاج خورشیدی (Corona) و زبانه‌های غول‌پیکر پلاسمایی
+              </span>
+</div>
+</div>
+</div>
+<!-- 1. عطارد / تیر (Mercury) -->
+<div class="bg-surface-container/60 backdrop-blur-2xl rounded-2xl p-space-lg relative overflow-hidden flex flex-col lg:flex-row items-center gap-space-xl group shadow-xl" id="body-mercury">
+<div class="w-full lg:w-5/12 h-72 sm:h-80 rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="High contrast orbital photography of planet Mercury, rocky cratered gray surface under stark cosmic sunlight, deep abyssal black shadow craters, realistic NASA messenger imagery style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAURIYVHfcqUOB--9EGI9cmimo5w-arS8jtCK9QFLgkLXtDVDKjUBa9B5amm-rWCEaLsxPtuPVXzzHA3bbHT3DtRIdArHMNWYsmHbjwOwXbJXik2PdQIUwwmC2QjeQyp_VrCE76I7_kJVdTCgke7GAws-4c7VJ54U6AWg8cixa0VfPmaFOQA3b5yiP_yr6Y-TLtjJxgpxKS4vvOYIZQFAESARGdqp5KRKeVENzq_jlsTFFa54tj6DI6"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md right-space-md flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase">TERRESTRIAL // SATELLITE_LESS</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">عطارد (تیر) / Mercury</span>
+</div>
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono-sm text-label-mono-sm text-outline">
+              نزدیک‌ترین سیاره
+            </div>
+</div>
+<div class="w-full lg:w-7/12 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase">STATION #01 • INNER ROCKY</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">تیر (عطارد)</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-primary font-label-mono-sm text-label-mono-sm font-bold">0.39 AU</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              کوچک‌ترین سیاره منظومه شمسی و نزدیک‌ترین همسایه به خورشید. به دلیل نبود اتمسفر پایدار برای حفظ گرما، دچار شدیدترین نوسانات دمایی در منظومه می‌شود؛ روزهایی سوزاننده و شب‌هایی فوق‌العاده منجمد.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">فاصله از خورشید</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary">57.9M km</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">دوره چرخش مداری</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۸۸ روز زمینی</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">دامنه دما</span>
+<span class="font-label-mono-lg text-label-mono-lg text-error">-180 تا +430°C</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">تعداد قمر</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۰ قمر</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">speed</span>
+                سریع‌ترین گردش مداری به دور خورشید (۴۷ کیلومتر بر ثانیه)
+              </span>
+</div>
+</div>
+</div>
+<!-- 2. زهره / ناهید (Venus) -->
+<div class="bg-surface-container/60 backdrop-blur-2xl rounded-2xl p-space-lg relative overflow-hidden flex flex-col lg:flex-row items-center gap-space-xl group shadow-xl" id="body-venus">
+<div class="w-full lg:w-5/12 h-72 sm:h-80 rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="Dense atmospheric view of Venus, thick swirling golden amber sulfuric acid clouds, dense greenhouse atmosphere obscuring volcanic basalt crust, atmospheric radar imagery aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtu_I1BZgoeBgUDGgskzMNCqDA8GfEH9LMyTqJUau08VAqR2eGlYTaXw78RRpPWsDoPb3uSLwnvgigjQ6Den9w9Q5nDXKdrAn56HJluols_VOb0yEcm4EmsEHsoaNkY4B_EnzWbKFKhsiI9b9Ua0j47PZ1gLv9lDdXAl3V_fJ222VZON17nKS9FOEfzomY_ZS46xli3FJhMRMCYjkBcYSTDBppESFqqA8Uctn6voFMprn6lA6bpnjt"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md right-space-md flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary uppercase">GREENHOUSE INFERNO</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">ناهید (زهره) / Venus</span>
+</div>
+<div class="absolute top-space-md left-space-md bg-error-container/80 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono-sm text-label-mono-sm text-on-error-container">
+              داغ‌ترین سیاره
+            </div>
+</div>
+<div class="w-full lg:w-7/12 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase">STATION #02 • INNER ROCKY</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">زهره (ناهید)</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-primary font-label-mono-sm text-label-mono-sm font-bold">0.72 AU</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              خواهر دوقلوی زمین از دید اندازه، اما جهنمی سوزان از گازهای گلخانه‌ای. جو بسیار متراکم دی‌اکسید کربن به همراه ابرهایی از قطرات اسید سولفوریک، گرمای نور خورشید را به دام انداخته و دمای سطحی آن را فراتر از نقطه ذوب سرب برده‌اند. همچنین زهره در جهتی وارونه (ساعتگرد) به دور خود می‌چرخد.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">دمای سطح میانگین</span>
+<span class="font-label-mono-lg text-label-mono-lg text-error">۴۶۵ °C</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">فشار اتمسفر</span>
+<span class="font-label-mono-lg text-label-mono-lg text-tertiary">۹۲ برابر زمین</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">جهت چرخش وضعی</span>
+<span class="font-label-mono-lg text-label-mono-lg text-secondary">معکوس (ساعتگرد)</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">مدار به دور خورشید</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۲۲۵ روز</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary">warning</span>
+                اثر گلخانه‌ای لجام گسیخته: هشداری زمین‌شناختی برای اقلیم سیاره‌ای
+              </span>
+</div>
+</div>
+</div>
+<!-- 3. زمین (Earth) -->
+<div class="bg-surface-container/60 backdrop-blur-2xl rounded-2xl p-space-lg relative overflow-hidden flex flex-col lg:flex-row items-center gap-space-xl group shadow-[0_0_40px_rgba(101,217,255,0.15)]" id="body-earth">
+<div class="w-full lg:w-5/12 h-72 sm:h-80 rounded-xl overflow-hidden relative shadow-[0_0_30px_rgba(101,217,255,0.3)]">
+<img class="w-full h-full object-cover" data-alt="Breathtaking deep orbital view of Planet Earth, vibrant azure blue oceans, swirling white cloud weather patterns, sunlit green continents and Arabian peninsula visible, pristine cinematic Apollo photography aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYIzUm0LybfMCixZM-5jsF4oFadF2OSTL6pdOILGOGQYHBxePPKaQsA0ted3JDIsD9f4JeskayDOesoBBglxUI9ld6mXKneLZNuCQirwxMEEM9RGfCsgPcWKGEUVjRxILBP1z2wNb36OK0HP7UGZEo6TayymMBCKYMsiM3yt4w9Su2adAjl0QvdFJNuBRc96DuOoHXUFrURGON4J9cXJi1ZSBdyJRfhfS5c1rfvQXSa0XBnEZds5Ng"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md right-space-md flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase">THE LIVING BIOSPHERE</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">زمین / Earth</span>
+</div>
+<div class="absolute top-space-md left-space-md bg-primary-container text-on-primary-container px-space-sm py-space-xs rounded font-label-mono-sm text-label-mono-sm font-bold">
+              گهواره حیات
+            </div>
+</div>
+<div class="w-full lg:w-7/12 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase">STATION #03 • THE BLUE MARBLE</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">زمین (زیست‌کره ما)</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-primary-container text-on-primary-container font-label-mono-sm text-label-mono-sm font-bold">1.00 AU</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              تنها مأمن شناخته شده دارای حیات در پهنه کیهان. قرارگیری در کمربند حیات (فاصله متناسب از خورشید)، وجود اقیانوس‌های نیلگون از آب مایع، جو غنی از نیتروژن و اکسیژن و میدان مغناطیسی محافظ، شرایط زیستی کم‌نظیری را پدید آورده‌اند.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">دوره گردش انتقالی</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary">۳۶۵.۲۵ روز</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">پوشش آب سطحی</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary-fixed">۷۱ ٪</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">قمر طبیعی</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۱ (ماه / Moon)</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">گرانش مبنا</span>
+<span class="font-label-mono-lg text-label-mono-lg text-secondary">1.00 g (9.8 m/s²)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-primary hover:bg-surface-container-highest font-headline-sm text-headline-sm text-sm flex items-center gap-space-xs transition-colors" onclick="document.getElementById('planet-dossier-panel').classList.remove('translate-x-full'); document.getElementById('planet-dossier-panel').classList.remove('invisible');" type="button">
+<span class="material-symbols-outlined text-base">tune</span>
+<span>باز کردن مقایسه و اطلاعات ماهواره‌ای</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4. مریخ / بهرام (Mars) -->
+<div class="bg-surface-container/60 backdrop-blur-2xl rounded-2xl p-space-lg relative overflow-hidden flex flex-col lg:flex-row items-center gap-space-xl group shadow-xl" id="body-mars">
+<div class="w-full lg:w-5/12 h-72 sm:h-80 rounded-xl overflow-hidden relative shadow-[0_0_30px_rgba(255,180,171,0.2)]">
+<img class="w-full h-full object-cover" data-alt="High fidelity space explorer view of Mars, striking rust red and ochre iron oxide landscapes, deep Valles Marineris canyon rift, polar ice caps, cinematic orbital high resolution render" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALuzJ8BuwG66eTf2DhBvkNFdugxjIw9CxqGNlUVCqiqzhPZ91IqAvQ-WQTsJVmkKAGRtLjWBQUz4Pc9qsKXGeKjohgGU3jgZLHIegc9qziAO7MeoosFuxL9cNtlGWzhrrwuGX_-rU60arzm94Bf1KEPYXUFi2Jq2z-xHzFD79uJ4sGB4X2pJSu-ZFhlmU1su77taTz7dbKE2RjxofaQRWCLxDTgoiYtR73Eyr39HFCCUxTirQ5ihPd"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md right-space-md flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-error uppercase">THE RED FRONTIER</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">بهرام (مریخ) / Mars</span>
+</div>
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono-sm text-label-mono-sm text-error">
+              سیاره سرخ
+            </div>
+</div>
+<div class="w-full lg:w-7/12 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase">STATION #04 • INNER ROCKY</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">بهرام (مریخ)</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-error font-label-mono-sm text-label-mono-sm font-bold">1.52 AU</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              سرزمین اکسید آهن و پایگاه اصلی کاوش‌های رباتیک بشر. مریخ میزبان کوه المپوس (بلندترین آتشفشان کشف‌شده در کل منظومه با ارتفاعی نزدیک به سه‌برابر اورست) است. شواهد پرشمار زمین‌شناختی نشان می‌دهند در گذشته باستانی آب مایع در بستر دره‌های آن جاری بوده است.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">کوه المپوس</span>
+<span class="font-label-mono-lg text-label-mono-lg text-error">۲۱.۹ km ارتفاع</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">مدار دور خورشید</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۶۸۷ روز زمینی</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">اقمار طبیعی</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary">۲ (فوبوس و دیموس)</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">گرانش سطحی</span>
+<span class="font-label-mono-lg text-label-mono-lg text-secondary">0.38 g (38% زمین)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<button class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-primary hover:bg-surface-container-highest font-headline-sm text-headline-sm text-sm flex items-center gap-space-xs transition-colors" onclick="document.getElementById('planet-dossier-panel').classList.remove('translate-x-full'); document.getElementById('planet-dossier-panel').classList.remove('invisible');" type="button">
+<span class="material-symbols-outlined text-base">analytics</span>
+<span>بررسی ساختار درونی و اتمسفر مریخ</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 5. مشتری / برجیس (Jupiter) -->
+<div class="bg-surface-container/60 backdrop-blur-2xl rounded-2xl p-space-lg relative overflow-hidden flex flex-col lg:flex-row items-center gap-space-xl group shadow-xl" id="body-jupiter">
+<div class="w-full lg:w-5/12 h-72 sm:h-80 rounded-xl overflow-hidden relative shadow-[0_0_30px_rgba(178,197,255,0.2)]">
+<img class="w-full h-full object-cover" data-alt="Stunning telescope perspective of gas giant Jupiter, swirling copper, cream and tan atmospheric cloud bands, the famous Great Red Spot cyclonic storm, sharp astronomical details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAubRc5gwxhJurqMLbN7OFzljIWpmFPA9xxTm0wQoHeKySHzeyvGMeyrWzTTMTrirkx_YlHbvLz7zOxW2TeyYaCOE-53zZDTfZfnUh2z92QaY_titZFI4GR5mBmYfZBZko4XOLoISJfKzm4YcaDo9GiEn2qXBrrVw0-_5DkJEXe5bkbTPDEo9NLP_pHYmPwjvXYjBc_xpnYCv5b8JeHOqCwaQAZGj6LltfvPOAup6RH-k3W_4UyM6aL"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md right-space-md flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">KING OF GIANTS</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">برجیس (مشتری) / Jupiter</span>
+</div>
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono-sm text-label-mono-sm text-secondary">
+              بزرگ‌ترین سیاره
+            </div>
+</div>
+<div class="w-full lg:w-7/12 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase">STATION #05 • GAS GIANT</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">برجیس (مشتری)</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-secondary font-label-mono-sm text-label-mono-sm font-bold">5.20 AU</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              غول گازی عظیم که جرم آن ۲.۵ برابر مجموع تمام سیارات دیگر منظومه است. مشتری با چرخش وضعی پرشتاب خود (تنها ۹.۹ ساعت برای یک شبانه‌روز کامل)، سریع‌ترین چرخش را دارد. لکه سرخ بزرگ، طوفانی بیضوی و سترگ است که بیش از ۳۰۰ سال بی‌وقفه خروشیده است.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">تعداد اقمار تایید شده</span>
+<span class="font-label-mono-lg text-label-mono-lg text-secondary">۹۵ قمر</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">طول شبانه‌روز</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary">۹.۹ ساعت</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">طوفان لکه سرخ</span>
+<span class="font-label-mono-lg text-label-mono-lg text-error">&gt; ۳۰۰ سال قدمت</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">سپر محافظتی زمین</span>
+<span class="font-label-mono-lg text-label-mono-lg text-tertiary">جاذب دنباله‌دارها</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">adjust</span>
+                دارای ۴ قمر گالیله‌ای مشهور: گانیمید (بزرگ‌ترین قمر منظومه)، اروپا، آیو و کالیستو
+              </span>
+</div>
+</div>
+</div>
+<!-- 6. زحل / کیوان (Saturn) -->
+<div class="bg-surface-container/60 backdrop-blur-2xl rounded-2xl p-space-lg relative overflow-hidden flex flex-col lg:flex-row items-center gap-space-xl group shadow-xl" id="body-saturn">
+<div class="w-full lg:w-5/12 h-72 sm:h-80 rounded-xl overflow-hidden relative shadow-[0_0_30px_rgba(255,221,176,0.2)]">
+<img class="w-full h-full object-cover" data-alt="Majestic orbital view of Saturn showing wide illuminated ice rings, exquisite ring shadow cast across soft golden gaseous clouds, Cassini spacecraft optical imagery aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD0V2bV7uT-cn5O82Bj_0cb0U09dm34PWd4DYdbG7-PJMLmO6UojSIY6HAc5u4Y1d87iAIKtXMGnkwIVz-F770daWsNpxxzZHAbjAYiFF2LflwAAiVaPK_9tzHlx74CcgyjwvaJKlNOYc6JdsR2i5KHCxk-YW0YT4-nB0l09EPOpW2Gq_88FtjO2H7NNEZq6CTbA53di3gRiff_x_xIJiRgFjqVALInHFeKlEAHrS0qZSo6-Td1qJW"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md right-space-md flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-tertiary-fixed uppercase">RINGED MAJESTY</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">کیوان (زحل) / Saturn</span>
+</div>
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono-sm text-label-mono-sm text-tertiary">
+              سلطان حلقه‌ها
+            </div>
+</div>
+<div class="w-full lg:w-7/12 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase">STATION #06 • GAS GIANT</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">کیوان (زحل)</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-tertiary-fixed font-label-mono-sm text-label-mono-sm font-bold">9.58 AU</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              شاید تماشایی‌ترین منظره در آسمان؛ سیاره‌ای احاطه شده با کمربندی خیره‌کننده از میلیاردها قطعه یخ، غبار و سنگ سرگردان. چگالی کلی زحل به قدری کم است که اگر اقیانوسی به پهنای آن وجود داشت، بر روی آب شناور می‌ماند!
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">اقمار ثبت شده</span>
+<span class="font-label-mono-lg text-label-mono-lg text-tertiary">۱۴۶ قمر (رکورددار)</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">چگالی میانگین</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary">0.687 g/cm³ (&lt; آب)</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">گستره حلقه‌ها</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۲۸۲,۰۰۰ km</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">مدار دور خورشید</span>
+<span class="font-label-mono-lg text-label-mono-lg text-secondary">۲۹.۴ سال زمینی</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-tertiary">radio_button_checked</span>
+                میزبان قمر «تیتان» با جو چگال و دریاچه‌های هیدروکربنی متان و اتان
+              </span>
+</div>
+</div>
+</div>
+<!-- 7. اورانوس (Uranus) -->
+<div class="bg-surface-container/60 backdrop-blur-2xl rounded-2xl p-space-lg relative overflow-hidden flex flex-col lg:flex-row items-center gap-space-xl group shadow-xl" id="body-uranus">
+<div class="w-full lg:w-5/12 h-72 sm:h-80 rounded-xl overflow-hidden relative shadow-[0_0_30px_rgba(183,234,255,0.2)]">
+<img class="w-full h-full object-cover" data-alt="Cold cyan turquoise planet Uranus floating in silent deep space, subtle concentric rings, misty methane atmospheric haze, Voyager 2 scientific imagery aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNR6blciqQNtP7jcjNaBe2C0LU5Jc8cL5Ybhpi11iGGntkPUZ5DYKmFtH4vaOM8ENlJJvlWgemleXVLe0mxABdpxuDS2WKrrt-c9g0S0-dWYDg-3cjgNgJmdKyn0vkdF15FF8zkWXDEJRBT8zj9cqKvsQR3r7OSrUhGNJT_P0TaPfS_3ovtTrGhP-I2k9EMcvy4HC67I08peNDGOMPaernaEmw4tzoMWNzOtAw52WX5Q0PxCvh56ly"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md right-space-md flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-primary-fixed uppercase">THE TILTED ICE GIANT</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">اورانوس / Uranus</span>
+</div>
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono-sm text-label-mono-sm text-primary">
+              انحراف محوری عجیب
+            </div>
+</div>
+<div class="w-full lg:w-7/12 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase">STATION #07 • ICE GIANT</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">اورانوس</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-primary-fixed font-label-mono-sm text-label-mono-sm font-bold">19.22 AU</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              غول یخی رازآلود با انحراف محوری شگفت‌انگیز ۹۸ درجه که گویی بر روی پهلو در مدار خود غلت می‌خورد. این انحراف نامتعارف موجب پدید آمدن فصل‌هایی به درازای چندین دهه می‌شود. متان موجود در جو فوقانی، نور قرمز را جذب کرده و جلوه‌ای فیروزه‌ای و آرام به آن بخشیده است.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">انحراف محور چرخش</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary">۹۷.۷۷ درجه</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">حداقل دمای اتمسفر</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary-fixed">-۲۲۴.۲ °C</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">تعداد اقمار</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۲۸ قمر</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">مدار دور خورشید</span>
+<span class="font-label-mono-lg text-label-mono-lg text-secondary">۸۴ سال زمینی</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-primary">ac_unit</span>
+                سردترین اتمسفر سیاره‌ای در سراسر منظومه خورشیدی
+              </span>
+</div>
+</div>
+</div>
+<!-- 8. نپتون (Neptune) -->
+<div class="bg-surface-container/60 backdrop-blur-2xl rounded-2xl p-space-lg relative overflow-hidden flex flex-col lg:flex-row items-center gap-space-xl group shadow-xl" id="body-neptune">
+<div class="w-full lg:w-5/12 h-72 sm:h-80 rounded-xl overflow-hidden relative shadow-[0_0_30px_rgba(29,66,146,0.3)]">
+<img class="w-full h-full object-cover" data-alt="Deep cerulean blue ice giant planet Neptune, dark spots and high-altitude bright white cirrus methane clouds, dark cosmic perimeter, cinematic deep space aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHpiC1FpMsA6_y5ZdiheNBIGlacBf7nvM6RQT6llKozBBCrzJhCt-DvEYjOXHuj3MIoCHyYv82VNR7PW4CFThlQwB5tKUeAmQcBA9Eq0_GFXGtt465gbQsGJBCD9zbqYQPSeKsICyAZhT0JwxqGROB0fHucIlGXezDLsphswlk1N68Y9lwohhuZTewP9EHR__xV-g1FfoGsERNfacZr4ZwEXAFvNmV4bcw6e3t-srwHMMlS7_EsfM5"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute bottom-space-md right-space-md flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-secondary uppercase">THE SUPERSONIC EDGE</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">نپتون / Neptune</span>
+</div>
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/80 backdrop-blur-md px-space-sm py-space-xs rounded font-label-mono-sm text-label-mono-sm text-secondary">
+              آخرین سیاره رسمی
+            </div>
+</div>
+<div class="w-full lg:w-7/12 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-outline uppercase">STATION #08 • ICE GIANT</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">نپتون (کرانه‌های منظومه)</h3>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-highest text-secondary-fixed-dim font-label-mono-sm text-label-mono-sm font-bold">30.05 AU</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              دورافتاده‌ترین سیاره رسمی از خورشید که در فاصله‌ای نزدیک به ۴.۵ میلیارد کیلومتر غوطه‌ور است. این غول یخی خاستگاه بادهای فراصوت دهشتناکی با سرعت بیش از ۲۱۰۰ کیلومتر بر ساعت است؛ شدیدترین تندبادهایی که تاکنون در قلمرو منظومه شمسی اندازه‌گیری شده‌اند.
+            </p>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">حداکثر سرعت باد</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary">+۲,۱۰۰ km/h</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">فاصله از خورشید</span>
+<span class="font-label-mono-lg text-label-mono-lg text-secondary">۴.۵ میلیارد km</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">دوره گردش مداری</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۱۶۴.۸ سال زمینی</span>
+</div>
+<div class="bg-surface-container-high/50 p-space-sm rounded-lg flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-outline">اقمار تایید شده</span>
+<span class="font-label-mono-lg text-label-mono-lg text-tertiary">۱۶ قمر (تریتون)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-sm text-secondary">cyclone</span>
+                لکه تاریک بزرگ (Great Dark Spot) و قمر پس‌رونده تریتون با آتشفشان‌های نیتروژن یخ‌زده
+              </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: ASTRONOMICAL BENCHMARK COMPARISON MATRIX (Earth vs Mars) -->
+<section class="relative w-full px-gutter py-space-xl" id="compare-matrix">
+<div class="bg-surface-container-low/90 backdrop-blur-2xl rounded-2xl p-space-lg md:p-space-xl shadow-2xl flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase">BENCHMARK_MATRIX // GRADE 9 COMPARATIVE LAB</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">ماتریس مقایسه مستقیم: زمین در برابر بهرام (مریخ)</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">تحلیل تطبیقی مشخصات سیاره زیست‌پذیر با نزدیک‌ترین نامزد پایگاه سرنشین‌دار فضایی</p>
+</div>
+<div class="flex items-center gap-space-xs font-label-mono-sm text-label-mono-sm text-outline">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> داده‌های تله‌متری ماموریت مریخ ۲۰۲۰
+          </div>
+</div>
+<!-- Comparative Interactive Visual Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg pt-space-md">
+<!-- Earth Column Card -->
+<div class="bg-surface-container/70 p-space-lg rounded-xl flex flex-col gap-space-md shadow-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-4 h-4 rounded-full bg-primary-container shadow-[0_0_10px_rgba(101,217,255,0.7)]"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">زمین (Earth)</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">1.00 g // BASELINE</span>
+</div>
+<!-- Gravity Gauge -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-mono-sm text-label-mono-sm">
+<span class="text-on-surface-variant">گرانش سطحی (Surface Gravity)</span>
+<span class="text-on-surface font-bold">9.8 m/s² (100%)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full w-full"></div>
+</div>
+</div>
+<!-- Atmosphere Gauge -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-mono-sm text-label-mono-sm">
+<span class="text-on-surface-variant">فشار جوی در سطح دریا</span>
+<span class="text-on-surface font-bold">101.3 kPa (1.0 bar)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-full"></div>
+</div>
+</div>
+<!-- Mean Temp -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-high/40 rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface-variant">میانگین دمای سراسری</span>
+<span class="font-label-mono-lg text-label-mono-lg text-primary">+۱۵ °C</span>
+</div>
+<!-- Diameter -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-high/40 rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface-variant">قطر استوایی</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۱۲,۷۴۲ km</span>
+</div>
+</div>
+<!-- Mars Column Card -->
+<div class="bg-surface-container/70 p-space-lg rounded-xl flex flex-col gap-space-md shadow-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-4 h-4 rounded-full bg-error shadow-[0_0_10px_rgba(255,180,171,0.5)]"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">بهرام / مریخ (Mars)</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-error">0.38 g // TARGET</span>
+</div>
+<!-- Gravity Gauge -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-mono-sm text-label-mono-sm">
+<span class="text-on-surface-variant">گرانش سطحی (Surface Gravity)</span>
+<span class="text-on-surface font-bold">3.71 m/s² (38%)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full w-[38%]"></div>
+</div>
+</div>
+<!-- Atmosphere Gauge -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex justify-between font-label-mono-sm text-label-mono-sm">
+<span class="text-on-surface-variant">فشار جوی در سطح</span>
+<span class="text-on-surface font-bold">0.6 kPa (کمتر از ۱٪ زمین)</span>
+</div>
+<div class="w-full h-2.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-outline rounded-full w-[1%] min-w-1"></div>
+</div>
+</div>
+<!-- Mean Temp -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-high/40 rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface-variant">میانگین دمای سراسری</span>
+<span class="font-label-mono-lg text-label-mono-lg text-error">-۶۰ °C</span>
+</div>
+<!-- Diameter -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-high/40 rounded-lg">
+<span class="font-body-sm text-body-sm text-on-surface-variant">قطر استوایی</span>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface">۶,۷۷۹ km (~۵۳٪ زمین)</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: EDUCATIONAL CURRICULUM QUIZ CARD (Grade 9 Astronomy Engine) -->
+<section class="relative w-full px-gutter py-space-xl">
+<div class="bg-surface-container-low/80 backdrop-blur-2xl rounded-2xl p-space-lg md:p-space-xl shadow-2xl flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-container">psychology</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">خودآزمایی کیهانی علوم پایه نهم</span>
+</div>
+<span class="font-label-mono-sm text-label-mono-sm text-primary uppercase">QUESTION_01_OF_05</span>
+</div>
+<div class="p-space-md bg-surface-container/60 rounded-xl flex flex-col gap-space-md">
+<p class="font-body-lg text-body-lg text-on-surface font-semibold leading-relaxed">
+            پرسش: چرا سیاره «زهره» با وجود اینکه نسبت به «عطارد» فاصله بیشتری تا خورشید دارد، دارای میانگین دمای سطحی بالاتری است؟
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm pt-space-xs" id="quiz-options">
+<button class="text-right p-space-md rounded-xl bg-surface-container-high/50 hover:bg-surface-container-high text-on-surface transition-all flex items-center justify-between group" onclick="selectAnswer(this, false)" type="button">
+<span class="font-body-md text-body-md">الف) وجود آتشفشان‌های فعال بی‌شمار در هسته مذاب زهره</span>
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center font-label-mono-sm text-label-mono-sm">۱</span>
+</button>
+<button class="text-right p-space-md rounded-xl bg-surface-container-high/50 hover:bg-surface-container-high text-on-surface transition-all flex items-center justify-between group" onclick="selectAnswer(this, true)" type="button">
+<span class="font-body-md text-body-md">ب) جو بسیار متراکم دی‌اکسید کربن و بروز اثر شدید گلخانه‌ای</span>
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center font-label-mono-sm text-label-mono-sm">۲</span>
+</button>
+<button class="text-right p-space-md rounded-xl bg-surface-container-high/50 hover:bg-surface-container-high text-on-surface transition-all flex items-center justify-between group" onclick="selectAnswer(this, false)" type="button">
+<span class="font-body-md text-body-md">ج) چرخش وضعی ساعتگرد و سرعت زاویه‌ای غیرعادی</span>
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center font-label-mono-sm text-label-mono-sm">۳</span>
+</button>
+<button class="text-right p-space-md rounded-xl bg-surface-container-high/50 hover:bg-surface-container-high text-on-surface transition-all flex items-center justify-between group" onclick="selectAnswer(this, false)" type="button">
+<span class="font-body-md text-body-md">د) تابش پرتوهای کیهانی از سمت قمرهای طبیعی زهره</span>
+<span class="w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center font-label-mono-sm text-label-mono-sm">۴</span>
+</button>
+</div>
+<!-- Dynamic Feedback Box -->
+<div class="hidden p-space-md rounded-xl transition-all" id="quiz-feedback"></div>
+</div>
+</div>
+</section>
+</div>
+<!-- SECTION 5: INTERACTIVE PLANET SCIENTIFIC DOSSIER DRAWER (Slide-out HUD) -->
+<aside class="fixed inset-y-20 left-0 w-full sm:w-[440px] bg-surface-container-lowest/95 backdrop-blur-2xl z-50 p-space-lg shadow-[-8px_0_32px_rgba(0,0,0,0.8)] flex flex-col justify-between overflow-y-auto transition-transform duration-500 translate-x-full invisible" id="planet-dossier-panel">
+<div class="flex flex-col gap-space-md">
+<!-- Drawer Header with Close Button -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error shadow-[0_0_8px_rgba(255,180,171,0.8)]"></span>
+<span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant uppercase">DEEP SCAN DOSSIER</span>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface flex items-center justify-center transition-colors" onclick="document.getElementById('planet-dossier-panel').classList.add('translate-x-full'); document.getElementById('planet-dossier-panel').classList.add('invisible');" type="button">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+<!-- Planet Title and Visual Header -->
+<div class="flex flex-col">
+<span class="font-label-mono-sm text-label-mono-sm text-error">PLANET // 04</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">بهرام (مریخ)</h3>
+<span class="font-label-mono-lg text-label-mono-lg text-on-surface-variant">Mars • 1.524 AU From Sun</span>
+</div>
+<!-- Atmospheric Gas Spectral Breakdown -->
+<div class="bg-surface-container/70 p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface text-sm">طیف‌سنجی ترکیبات جوی</span>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">SPECTRAL DATA</span>
+</div>
+<!-- Stacked Horizontal Bar -->
+<div class="w-full h-3 rounded-full flex overflow-hidden">
+<div class="bg-error w-[95%]" title="دی‌اکسید کربن ۹۵٪"></div>
+<div class="bg-secondary w-[3%]" title="نیتروژن ۲.۶٪"></div>
+<div class="bg-tertiary-container w-[1.5%]" title="آرگون ۱.۹٪"></div>
+<div class="bg-primary w-[0.5%]" title="سایر گازها ۰.۵٪"></div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs font-label-mono-sm text-label-mono-sm pt-space-xs">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-error"></span> CO₂ (دی‌اکسید کربن): ۹۵.۳٪
+          </div>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> N₂ (نیتروژن): ۲.۶٪
+          </div>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span> Ar (آرگون): ۱.۹٪
+          </div>
+<div class="flex items-center gap-1 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary"></span> رطوبت و اکسیژن: ۰.۱۶٪
+          </div>
+</div>
+</div>
+<!-- Internal Geological Cross-Section Anatomy -->
+<div class="bg-surface-container/70 p-space-md rounded-xl flex flex-col gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface text-sm">لایه‌بندی ساختار درونی</span>
+<div class="flex flex-col gap-space-xs text-sm">
+<div class="p-space-xs bg-surface-container-high/50 rounded flex items-center justify-between">
+<span class="text-on-surface">پوسته سطحی بازالتی (Crust)</span>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">عمق ۵۰ km</span>
+</div>
+<div class="p-space-xs bg-surface-container-high/50 rounded flex items-center justify-between">
+<span class="text-on-surface">گوشته سیلیکاتی غنی از آهن (Mantle)</span>
+<span class="font-label-mono-sm text-label-mono-sm text-primary">عمق ۱,۸۰۰ km</span>
+</div>
+<div class="p-space-xs bg-surface-container-high/50 rounded flex items-center justify-between">
+<span class="text-on-surface">هسته متراکم آهن-گوگرد (Core)</span>
+<span class="font-label-mono-sm text-label-mono-sm text-error">شعاع ۱,۸۳۰ km</span>
+</div>
+</div>
+</div>
+<!-- Active Spacecraft Missions -->
+<div class="bg-surface-container/70 p-space-md rounded-xl flex flex-col gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface text-sm">ماموریت‌های کاوشگری فعال</span>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<div class="flex items-center justify-between">
+<span class="text-on-surface flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> مریخ‌نورد استقامت (Perseverance)
+            </span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline">NASA • ۲۰۲۱</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> مریخ‌نورد کنجکاوی (Curiosity)
+            </span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline">NASA • ۲۰۱۲</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-on-surface flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> مدارگرد امید (Hope Probe)
+            </span>
+<span class="font-label-mono-sm text-label-mono-sm text-outline">UAE • ۲۰۲۱</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Actions at Bottom of Drawer -->
+<div class="pt-space-md flex flex-col gap-space-xs">
+<a class="w-full py-space-sm rounded-lg bg-primary-container text-on-primary-container font-headline-sm text-headline-sm text-sm text-center flex items-center justify-center gap-space-xs shadow-md" href="#compare-matrix" onclick="document.getElementById('planet-dossier-panel').classList.add('translate-x-full'); document.getElementById('planet-dossier-panel').classList.add('invisible');">
+<span class="material-symbols-outlined text-base">balance</span>
+<span>مقایسه مستقیم با سیاره زمین</span>
+</a>
+<button class="w-full py-space-xs text-on-surface-variant hover:text-on-surface font-body-sm text-body-sm" onclick="document.getElementById('planet-dossier-panel').classList.add('translate-x-full'); document.getElementById('planet-dossier-panel').classList.add('invisible');" type="button">
+        بستن پانل مشخصات
+      </button>
+</div>
+</aside>
+<!-- Interactive JavaScript Engine for Drawer & Pedagogical Quizzing -->
+<script>
+    function selectAnswer(button, isCorrect) {
+      const feedback = document.getElementById('quiz-feedback');
+      const allButtons = document.querySelectorAll('#quiz-options button');
+      
+      allButtons.forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container', 'bg-error-container', 'text-on-error-container');
+      });
+
+      feedback.classList.remove('hidden', 'bg-primary-container/20', 'text-primary', 'bg-error-container/30', 'text-error');
+
+      if (isCorrect) {
+        button.classList.add('bg-primary-container', 'text-on-primary-container');
+        feedback.classList.add('bg-primary-container/20', 'text-primary');
+        feedback.innerHTML = `
+          <div class="flex items-center gap-space-xs">
+            <span class="material-symbols-outlined text-lg">check_circle</span>
+            <span class="font-headline-sm text-headline-sm text-sm font-bold">آفرین! پاسخ کاملاً درست است.</span>
+          </div>
+          <p class="font-body-sm text-body-sm mt-1 leading-relaxed text-on-surface">
+            جو زهره متشکل از بیش از ۹۶ درصد دی‌اکسید کربن به همراه ابرهای چگال اسید سولفوریک است که مانع از خروج تابش فروسرخ سطح به فضا شده و دمای آن را تا ۴۶۵ درجه سانتی‌گراد افزایش داده‌اند.
+          </p>
+        `;
+      } else {
+        button.classList.add('bg-error-container', 'text-on-error-container');
+        feedback.classList.add('bg-error-container/30', 'text-error');
+        feedback.innerHTML = `
+          <div class="flex items-center gap-space-xs">
+            <span class="material-symbols-outlined text-lg">cancel</span>
+            <span class="font-headline-sm text-headline-sm text-sm font-bold">پاسخ نادرست است.</span>
+          </div>
+          <p class="font-body-sm text-body-sm mt-1 leading-relaxed text-on-surface">
+            علت اصلی گرمای زهره، ترکیب اتمسفر غلیظ و اثر گلخانه‌ای لجام‌گسیخته آن است که گرما را محبوس می‌کند. گزینه ۲ را مجدداً مرور کنید!
+          </p>
+        `;
+      }
+    }
+  </script>
+</div></main></div><footer class="fixed bottom-0 inset-x-0 h-16 bg-surface-container-lowest/85 backdrop-blur-xl z-40 flex items-center shadow-[0_-1px_12px_rgba(0,0,0,0.4)]"><div class="w-full px-gutter flex flex-wrap items-center justify-between gap-space-sm"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-mono-sm text-label-mono-sm text-primary">RA_17h 57m 48s</span><span class="font-label-mono-sm text-label-mono-sm text-outline">|</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">DEC_+04° 41′ 36″</span></div><div class="hidden md:flex items-center gap-space-xs bg-surface-container-high/40 px-space-sm py-space-xs rounded"><span class="font-label-mono-sm text-label-mono-sm text-tertiary-container">1 AU ≈ 149,597,870.7 km</span><span class="font-body-sm text-body-sm text-on-surface-variant">(فاصله زمین تا خورشید)</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-high/40 px-space-sm py-space-xs rounded"><span class="font-label-mono-sm text-label-mono-sm text-primary">WEBGL:</span><span class="font-label-mono-sm text-label-mono-sm text-on-surface">60 FPS</span><span class="font-label-mono-sm text-label-mono-sm text-outline">|</span><span class="font-label-mono-sm text-label-mono-sm text-secondary">RAYMARCHING ACTIVE</span></div><div class="hidden sm:flex items-center gap-space-xs"><span class="font-label-mono-sm text-label-mono-sm text-on-surface-variant">SHORTCUTS:</span><span class="font-label-mono-sm text-label-mono-sm bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface">[SPACE] FREEZE</span><span class="font-label-mono-sm text-label-mono-sm bg-surface-container-high px-1.5 py-0.5 rounded text-on-surface">[R] RESET CAM</span></div></div></div></footer></body></html>

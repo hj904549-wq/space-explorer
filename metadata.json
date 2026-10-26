@@ -1,0 +1,6 @@
+{
+  "name": "Space Explorer — 3D Solar System Observatory",
+  "description": "An interactive, cinematic 3D Solar System exploration experience and Grade 9 astronomy observatory with scroll-controlled Three.js camera choreography, real-time planetary mechanics, and bilingual Persian/English telemetry.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
