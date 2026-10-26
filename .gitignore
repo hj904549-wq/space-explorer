@@ -7,3 +7,5 @@ coverage/
 .env*
 !.env.example
 .aistudio/
+# Google AI Studio temporary files
+.aistudio/
